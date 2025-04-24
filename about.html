@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Bungee+Spice&family=Carter+One&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+
+
+  <div class="settings-box" id="settingsBox">
+		<div class="settings-icon" onclick="toggleColorBox()">
+			<i class="fas fa-palette"></i>
+		</div>
+		<div class="color-options">
+			<p>Choose Your Style:</p>
+			<div class="color-palette">
+				<div style="background:  rgb(214, 108, 2);" onclick="applyColor(' rgb(214, 108, 2)')"></div>
+				<div style="background: rgb(114, 31, 0);" onclick="applyColor('rgb(114, 31, 0)')"></div>
+				<div style="background: rgb(1, 118, 168);" onclick="applyColor('rgb(1, 118, 168)')"></div>
+				<div style="background: rgb(60, 0, 97);" onclick="applyColor('rgb(60, 0, 97)')"></div>
+	
+			</div>
+		</div>
+	</div>
+
+  <!--
+  
+    <div class="sidebar-navigation">
+    <ul>
+      <li class="change-bgcolor">
+       <a href="LCA.html"><i class="fa fa-home"></i></a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="about.html"><i class="fa fa-address-card"></i></a>
+        <span class="tooltip">About Us</span>
+      </li>
+
+      <li>
+        <i class="fa fa-newspaper"></i>
+        <span class="tooltip">Blog</span>
+      </li>
+      <li>
+        <a href="courses.html"><i class="fa fa-chalkboard"></i></a>
+        <span class="tooltip">Courses</span>
+      </li>
+      <li>
+        <i class="fa fa-calendar-check"></i>
+        <span class="tooltip">Events</span>
+      </li>
+      <li>
+        <i class="fa fa-address-book"></i>
+        <span class="tooltip">Contact</span>
+      </li>
+      <li>
+        <i class="fa fa-user-plus"></i>
+        <span class="tooltip">Apply</span>
+      </li>
+    </ul>
+
+
+
+    
+  </div>
+  
+  -->
+
+
+
+
+  
+<div id="nav-bar">
+  <input id="nav-toggle" type="checkbox"/>
+  <div id="nav-header"><a id="nav-title" href="https://codepen.io" target="_blank">LGC-Academy<i class="fas fa-graduation-cap"></i></a>
+    <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+    <hr/>
+  </div>
+  <div id="nav-content">
+    <div class="nav-button" ><a href="LCA.html"><i class="fas fa-home"></i><span>Home</span></a></div>
+    <div class="nav-button  change-bgcolor" style=" border-radius: 16px 0 0 16px;"><i class="fas fa-address-card"></i><span>About Us</span></div>
+    <div class="nav-button"><i class="fas fa-chalkboard"><a href="courses.html"></i><span>Courses</span></a></div>
+    <hr/>
+    <div class="nav-button"><i class="fas fa-newspaper"><a href="blog.html"></i><span>Blog</span></a></div>
+    <div class="nav-button"><i class="fas fa-calendar-check"></i><span>Events</span></div>
+    <div class="nav-button"><i class="fas fa-address-book"></i><span>Contact</span></div>
+    <div class="nav-button"><a href="Gallery.html"><i class="fas fa-images"></i><span>Gallery</span></a></div>
+
+    <hr/>
+    <div class="nav-button"><i class="fas fa-user-plus"></i><span>Apply</span></div>
+
+    <div id="nav-content-highlight"></div>
+  </div>
+  <input id="nav-footer-toggle" type="checkbox"/>
+  <div id="nav-footer">
+    <div id="nav-footer-heading">
+      <div id="nav-footer-avatar"><img src="LIFEGATE.png"/></div>
+      <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+    </div>
+    <div id="nav-footer-content">
+      <div class="introduction">
+        <p>Dedicated to nurturing young minds and shaping future leaders, We 
+          stands as a beacon of excellence, providing a holistic education 
+          that combines academic rigor, innovative teaching methods, 
+          and a supportive environment. With a focus on quality learning, 
+          LGCA empower students to excel in their studies, discover their passions, 
+          and develop the skills needed to thrive in a dynamic world.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="mainbody" id="mainbody">
+
+    <section class="intro">
+        <div class="left">
+          <div>
+            <span class="change-color">Explore</span>
+            <h1>The Place Where Discipline Meets Excellence</h1>
+            <p>Welcome to the best Standard Oriented School, where learning thrives, creativity blossoms, and every student is empowered to achieve their fullest potential in a nurturing environment. 
+                We pride ourselves on excellent teaching skills, professional teachers, a serene environment, and the provision of modern learning exposure to foster deep learning abilities.</p>
+          </div>
+        </div>
+  
+        <div class="slider">
+          <ul>
+            <li style="background-image:url(kindergatenchild2.webp)">
+              <div class="center-y">
+                <h3>Discover the Joy of Learning</h3>
+              </div>
+            </li>
+            <li style="background-image:url(5gradchild.jpg)">
+              <div class="center-y">
+                <h3>Discover the Young and Standard</h3>
+              </div>
+            </li>
+            <li style="background-image:url(classroomstud3.avif)">
+              <div class="center-y">
+                <h3>Discover What Works</h3>
+              </div>
+            </li>
+
+            <li style="background-image:url(view-school-building.jpg)">
+                <div class="center-y">
+                  <h3>Discover the Best Environment</h3>
+                </div>
+              </li>
+
+              <li style="background-image:url(young-kids-performing-play-theatre-stage-celebrate-world-theatre-day.jpg)">
+                <div class="center-y">
+                  <h3>Unleash Talents</h3>
+                </div>
+              </li>
+          </ul>
+  
+          <ul>
+            <nav>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+
+            </nav>
+          </ul>
+        </div>
+      </section>
+
+
+
+  <div class="card-body">
+    <div class="head" style="color: white;">
+    <h1>MISSIONS AND VISIONS</h1>
+    </div>
+
+    <div class="card-flex">
+      
+      <div class="cards">
+        <div class="card content">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="close-up-students-classroom.jpg" alt="Gamer">
+            </div>
+            <div class="card-label">Standard Learning</div>
+            <div class="card-title">
+              LGCA will raise over 20 Billion Top Scholars, shaping up leadership Quality.
+            </div>
+          </div>
+        </div>
+        <div class="card content">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="close-up-kid-while-having-technology-education-class.jpg" alt="keyboard">
+            </div>
+            <div class="card-label">
+              Technology
+            </div>
+            <div class="card-title">
+              The Future of Technology begins in an LGCA Classroom. Building Technological Smart Scholars.
+            </div>
+          </div>
+        </div>
+        <div class="card content">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="young-basketball-player-shoot.jpg" alt="Controller">
+            </div>
+            <div class="card-label">
+              Sports
+            </div>
+            <div class="card-title">
+                LGCA; Rooted in  creating world champions through sports excellence.
+            </div>
+          </div>
+        </div>
+        <div class="card form">
+          <div class="form-title">Apply Now</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>    
+
+
+    <div class="center-body">
+      <div class="head">
+        <h1>THE TEAM</h1>
+       </div>
+      <div class="center">
+        <div class="wrapper">
+          <div class="inner">
+
+            <div class="card">
+              <h1>Prof. Miriam Alham</h1>
+              <img src="teacher7.jpg">
+              <div class="content">
+                <h1>Academic Coordinator</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+            <div class="card">
+              <h1>Prof. Oluwa Johnson</h1>
+              <img src="teacher5.jpg">
+              <div class="content">
+                <h1>Subject Head</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+            <div class="card">
+              <h1>Prof. Williams Axe</h1>
+              <img src="teacher6.jpg">
+              <div class="content">
+                <h1>Discipline Coordinator</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+            <div class="card">
+              <h1>Prof. Emmy Chibueze</h1>
+              <img src="teacher4.jpg">
+              <div class="content">
+                <h1>Examination Officer</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+            <div class="card">
+              <h1>Prof. Woods Wild</h1>
+              <img src="teacher2.jpg">
+              <div class="content">
+                <h1>Student Welfare Officer</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+            <div class="card">
+              <h1>Prof. Caroline Teteh</h1>
+              <img src="teacher8.jpg">
+              <div class="content">
+                <h1>Digital Learning Lead</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+              <div class="card">
+                <h1>Prof. Maria Mackwood</h1>
+              <img src="teacher1.jpg">
+              <div class="content">
+                <h1>Extracurricular Activities Coordinator</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+            <div class="card">
+                <h1>Prof. Miks holand</h1>
+              <img src="teacher3.jpg">
+              <div class="content">
+                <h1>Digital Learning Lead</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+            <div class="card">
+              <h1>Prof. Emly Sush</h1>
+              <img src="teacher9.webp">
+              <div class="content">
+                <h1>Professional Development Coordinator</h1>
+                <h3>UI/UX, Design</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="map">
+          <button class="active first"></button>
+          <button class="second"></button>
+          <button class="third"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Section -->
+<main class="main">
+  <div class="head">
+    <h1>Why Choose Us</h1>
+  </div>
+  
+  <section class="section banner banner-section">
+     <div class="container banner-column">
+        <img class="banner-image" src="HIGHSCHOOL.png" alt="banner" style="mask-image: linear-gradient(to bottom, black 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);">
+        <div class="banner-inner">
+           <h1 class="heading-xl">Quality Education Like Never Before</h1>
+           <p class="paragraph">
+                Experience a nurturing environment where students excel 
+                academically, develop creativity, and grow into future 
+                leaders, equipped with the skills to succeed in a dynamic world.
+           </p>
+  
+<div class="why-body">
+<ul>
+    <li style="--accent-color:#0B374D">
+        <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="title">Quality</div>
+        
+    </li>
+    <li style="--accent-color:#1286A8">
+        <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="title">Innovation</div>
+        
+    </li>
+    <li style="--accent-color:#D2B53B">
+        <div class="icon"><i class="fa-solid fa-hand-fist"></i></div>
+        <div class="title">Commitment</div>
+        
+    </li>
+    <li style="--accent-color:#DA611E">
+        <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+        <div class="title">Digital</div>
+     
+    </li>
+    <li style="--accent-color:#AC2A1A">
+        <div class="icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="title">Excellence</div> 
+    </li>
+</ul>
+</div>
+           <button class="btn btn-darken btn-inline">
+              Our Courses<i class="bx bx-right-arrow-alt"></i>
+           </button>
+        </div>
+   <!--
+          <div class="banner-links">
+           <a href="#" title=""><i class="bx bxl-facebook"></i></a>
+           <a href="#" title=""><i class="bx bxl-instagram"></i></a>
+           <a href="#" title=""><i class="bx bxl-twitter"></i></a>
+           <a href="#" title=""><i class="bx bxl-youtube"></i></a>
+         </div>
+   -->     
+
+     </div>
+  </section>
+</main>
+
+    <div class="testimony-body">
+
+      <div class="head" style="color: white;">
+        <h1>What They Say</h1>
+      </div>
+
+      <div class="card-flex">
+      
+    <figure class="snip1157">
+      <blockquote>
+        <b>The teachers are not only knowledgeable but also
+           genuinely care about the students' well-being and growth. 
+           My child has become more confident, disciplined, and eager 
+           to learn. We couldn’t have chosen a better school!"</b>
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="teacher8.jpg" alt="sq-sample3" />
+      <div class="author">
+        <h5>Emilian Thomson <span> - Parent</span></h5>
+      </div>
+    </figure>
+    <figure class="snip1157 hover">
+      <blockquote><b>my biggest concern is my child’s safety and education. 
+                LGCA School provides a secure, supportive, and engaging learning 
+                environment. The teachers are patient and understanding.</b>
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="teacher9.webp" alt="sq-sample27" />
+      <div class="author">
+        <h5>Therisa Makyon<span> - Parent</span></h5>
+      </div>
+    </figure>
+    <figure class="snip1157">
+      <blockquote><b>LGCA School is more than just a school—it’s a family. 
+                The nurturing atmosphere, dedicated teachers, and excellent 
+                curriculum have given my children a strong foundation for 
+                the future. </b>
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="teacher2.jpg" alt="sq-sample17" />
+      <div class="author">
+        <h5>Mark Worten<span> - Uncle</span></h5>
+      </div>
+    </figure>
+
+  </div>
+
+</div>
+
+<div class="cta-body">
+
+    <div class="cta-container">
+        <div class="cta-content">
+            <h2>Join the Future of Learning</h2>
+            <p>Get access to high-quality education with interactive courses and expert teachers.</p>
+        </div>
+        <div class="cta-signin" style="position: relative;">
+            <img src="bookicon.png" alt="Watermark" style="position: absolute; top: 65%; right: 0%; transform: translate(-0%, -50%); opacity: 0.2; z-index: -1; width: 40%; height: auto;">
+            <h1>Register Now</h1>
+            <a href="#">Get Started</a>
+        </div>
+    </div>
+
+</div>
+
+
+  </div>    
+
+
+<script>
+
+  {
+  class SliderClip {
+    constructor(el) {
+      this.el = el;
+      this.Slides = Array.from(this.el.querySelectorAll('li'));
+      this.Nav = Array.from(this.el.querySelectorAll('nav a'));
+      this.totalSlides = this.Slides.length;
+      this.current = 0;
+      this.autoPlay = true; //true or false
+      this.timeTrans = 4000; //transition time in milliseconds
+      this.IndexElements = [];
+
+      for (let i = 0; i < this.totalSlides; i++) {
+        this.IndexElements.push(i);
+      }
+
+      this.setCurret();
+      this.initEvents();
+    }
+    setCurret() {
+      this.Slides[this.current].classList.add('current');
+      this.Nav[this.current].classList.add('current_dot');
+    }
+    initEvents() {
+      const self = this;
+
+      this.Nav.forEach(dot => {
+        dot.addEventListener('click', ele => {
+          ele.preventDefault();
+          this.changeSlide(this.Nav.indexOf(dot));
+        });
+      });
+
+      this.el.addEventListener('mouseenter', () => self.autoPlay = false);
+      this.el.addEventListener('mouseleave', () => self.autoPlay = true);
+
+      setInterval(function () {
+        if (self.autoPlay) {
+          self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
+          self.changeSlide(self.current);
+        }
+      }, this.timeTrans);
+
+    }
+    changeSlide(index) {
+
+      this.Nav.forEach(allDot => allDot.classList.remove('current_dot'));
+
+      this.Slides.forEach(allSlides => allSlides.classList.remove('prev', 'current'));
+
+      const getAllPrev = value => value < index;
+
+      const prevElements = this.IndexElements.filter(getAllPrev);
+
+      prevElements.forEach(indexPrevEle => this.Slides[indexPrevEle].classList.add('prev'));
+
+      this.Slides[index].classList.add('current');
+      this.Nav[index].classList.add('current_dot');
+    }}
+
+
+  const slider = new SliderClip(document.querySelector('.slider'));
+}
+
+
+
+	/* COLOR PALLET*/
+  document.addEventListener("DOMContentLoaded", function () {
+    const settingsIcon = document.querySelector(".settings-icon");
+    const settingsBox = document.getElementById("settingsBox");
+    let selectedColor = null; // No color is selected initially
+
+    // Toggle settings box on click
+    settingsIcon.addEventListener("click", function () {
+        settingsBox.classList.toggle("active");
+    });
+
+    // Close settings box when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!settingsBox.contains(event.target) && !settingsIcon.contains(event.target)) {
+            settingsBox.classList.remove("active");
+        }
+    });
+
+    // Function to change colors
+    function applyColor(color) {
+        selectedColor = color; // Store selected color
+        document.querySelectorAll(".change-bgcolor").forEach(el => el.style.backgroundColor = color);
+        document.querySelectorAll(".change-color").forEach(el => el.style.color = color);
+        document.querySelectorAll(".change-border").forEach(el => el.style.borderColor = color);
+    }
+
+    // Add event listeners to color palette options
+    document.querySelectorAll(".color-palette div").forEach(colorDiv => {
+        colorDiv.addEventListener("click", function () {
+            const chosenColor = this.style.backgroundColor;
+            applyColor(chosenColor);
+        });
+    });
+
+
+});
+
+
+// https://colorlib.com/preview/theme/seogo/
+
+const buttonsWrapper = document.querySelector(".map");
+const slides = document.querySelector(".inner");
+
+buttonsWrapper.addEventListener("click", e => {
+  if (e.target.nodeName === "BUTTON") {
+    Array.from(buttonsWrapper.children).forEach(item =>
+      item.classList.remove("active")
+    );
+    if (e.target.classList.contains("first")) {
+      slides.style.transform = "translateX(-0%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains("second")) {
+      slides.style.transform = "translateX(-33.33333333333333%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains('third')){
+      slides.style.transform = 'translatex(-66.6666666667%)';
+      e.target.classList.add('active');
+    }
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.querySelector(".mainbody");
+  const navToggle = document.getElementById("nav-toggle");
+
+  if (body && navToggle) {
+    body.addEventListener("click", function () {
+      navToggle.checked = true; // Only close if it's already open
+    });
+  }
+});
+
+      </script>
+</body>
+</html>

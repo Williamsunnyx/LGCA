@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+
+</head>
+<body>
+
+    <div class="settings-box" id="settingsBox">
+		<div class="settings-icon" onclick="toggleColorBox()">
+			<i class="fas fa-palette"></i>
+		</div>
+		<div class="color-options">
+			<p>Choose Your Style:</p>
+			<div class="color-palette">
+				<div style="background:  rgb(214, 108, 2);" onclick="applyColor(' rgb(214, 108, 2)')"></div>
+				<div style="background: rgb(114, 31, 0);" onclick="applyColor('rgb(114, 31, 0)')"></div>
+				<div style="background: rgb(1, 118, 168);" onclick="applyColor('rgb(1, 118, 168)')"></div>
+				<div style="background: rgb(60, 0, 97);" onclick="applyColor('rgb(60, 0, 97)')"></div>
+	
+			</div>
+		</div>
+	</div>
+
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox"/>
+        <div id="nav-header"><a id="nav-title" href="https://codepen.io" target="_blank">LGC-Academy<i class="fas fa-graduation-cap"></i></a>
+          <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+          <hr/>
+        </div>
+        <div id="nav-content">
+          <div onclick="window.open('LCA.html', '_self')" class="nav-button" ><i class="fas fa-home"></i><span>Home</span></div>
+          <div   onclick="window.open('about.html', '_self')" class="nav-button" style="display: flex;"><i class="fas fa-address-card"></i><span>About Us</span></div>
+          <div onclick="window.open('courses.html', '_self')"  class="nav-button" ><i class="fas fa-chalkboard"></i><span>Courses</span></div>
+          <hr/>
+          <div onclick="window.open('blog.html', '_self')" class="nav-button change-bgcolor" style="border-radius: 16px 0 0 16px;"><i class="fas fa-newspaper"></i><span>Blog</span></div>
+          <div class="nav-button"><i class="fas fa-calendar-check"></i><span>Events</span></div>
+          <div class="nav-button"><i class="fas fa-address-book"></i><span>Contact</span></div>
+          <div class="nav-button " onclick="window.open('gallery.html', '_self')" ><i class="fas fa-images"></i><span>Gallery</span></div>
+
+          <hr/>
+          <div class="nav-button"><a href=""><i class="fas fa-user-plus"></i><span>Apply</span></a></div>
+
+          <div id="nav-content-highlight"></div>
+        </div>
+        <input id="nav-footer-toggle" type="checkbox"/>
+        <div id="nav-footer">
+          <div id="nav-footer-heading">
+            <div id="nav-footer-avatar"><img src="LIFEGATE.png"/></div>
+            <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+          </div>
+          <div id="nav-footer-content">
+            <div class="introduction">
+              <p>Dedicated to nurturing young minds and shaping future leaders, We 
+                stands as a beacon of excellence, providing a holistic education 
+                that combines academic rigor, innovative teaching methods, 
+                and a supportive environment. With a focus on quality learning, 
+                LGCA empower students to excel in their studies, discover their passions, 
+                and develop the skills needed to thrive in a dynamic world.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="mainbody blog">
+        
+        <header>
+            <div class="category"><span>Lorem ipsum dolor sit amet, consectetur</span></div>
+          </header>
+          <div class="blog-wrapper">
+          
+            <aside>
+              <div class="chapter">
+                <h1>4</h1>
+              </div>
+            </aside>
+            <article>
+              <div class="chapter">
+                <h1>4</h1>
+              </div>
+              <h2 class="title">Lorem ipsum dolor robero, <br />sit maime error illum ullam aspernatur</h2>
+              <div class="cover-img"><img src="https://picsum.photos/640/330" alt="cover image" /></div>
+              <div class="content first">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime error illum, eum placeat quae molestias repudiandae ipsa odit, ab incidunt molestiae, repellendus quam perspiciatis laborum praesentium id doloremque nostrum sit cum fugit. Vero incidunt
+                  iste ipsam, explicabo illum libero, enim ullam tenetur id, quaerat sapiente.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ratione asperiores, quam labore ullam dolore a neque molestiae! Facere atque nobis voluptas! Blanditiis tempora adipisci quis nemo expedita voluptate a aspernatur suscipit reiciendis nesciunt possimus illum, assumenda sequi eius voluptas neque! Libero, laborum quos ut corporis totam ducimus magnam quasi, quod pariatur distinctio, alias commodi enim dolores earum obcaecati! Numquam.</p>
+          
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eveniet dolor sequi accusantium, voluptatum mollitia, dolores voluptates omnis officia praesentium veritatis? Dolorum, delectus expedita!</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptatum deserunt facere voluptas similique ullam doloremque minus harum praesentium, veritatis vel obcaecati fuga dicta molestias error! Sequi.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quod.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sapiente molestias quam iste dolorem non itaque vitae ullam.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magni beatae, eligendi distinctio. Cum, tempora atque inventore repellat ipsum dolore ipsam maxime mollitia sequi earum odit enim consectetur possimus quasi, iusto deleniti et ad. Consectetur vero reiciendis soluta sint, itaque, repellendus molestias consequatur dolorem iure.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, fugit, repudiandae. Ad facilis, possimus enim, voluptatum aperiam facere nihil totam!</p>
+              </div>
+              <hr class="flourish" />
+              <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt beatae assumenda saepe dolorem molestiae voluptatem quisquam commodi consequatur tempora. In quisquam rerum repellendus. Cumque architecto atque, maiores necessitatibus. Expedita commodi dolores quos reprehenderit, possimus vel aliquid ducimus ea doloremque nulla beatae harum blanditiis minus officiis eius fuga quod error facilis debitis rem. Sapiente commodi, maiores accusamus earum, animi nihil eos dicta eveniet impedit pariatur eius perspiciatis quis officia quia eligendi ducimus enim possimus nam iusto ipsa itaque sunt rerum quo reiciendis. Tenetur consequuntur quasi numquam omnis perspiciatis laudantium quisquam magnam, labore voluptas, autem ipsam. Consequatur eaque provident molestias doloremque.</p>
+                <blockquote class="right">
+                  Now this is a story all about how my life got flipped - turned upside down. And I'd like to take a minute just sit right there, I'll tell you how I became the prince of a town called Bel-Air.
+                </blockquote>
+                <p>
+                  <img class="right" src="https://picsum.photos/400/300" alt="image" />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequatur est sit non, laboriosam odit quidem mollitia minus. Doloremque eum, atque sunt. Quisquam, totam. Quidem perspiciatis cumque facere blanditiis aspernatur corrupti ut alias et odio aut at consectetur voluptatibus possimus rerum animi sapiente quibusdam suscipit, id modi ex deserunt omnis ipsum architecto nam. Consequuntur, quam culpa. Nisi quidem accusamus voluptates enim cupiditate ullam adipisci dolorem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptatem, in ad consequuntur inventore voluptatum excepturi amet corporis vel, sed magnam nulla, id. Quam voluptatem quae ipsa corporis tenetur nisi eius amet sint magnam eligendi. Error sequi distinctio officia quia laborum maiores delectus provident vero, architecto qui cupiditate harum totam ea, facilis quas quae non earum ab eveniet quo nulla quis porro vitae. Rem minus nam quas nesciunt eos sed corporis nostrum neque, quia praesentium aperiam! Consectetur optio magnam ab!</p>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                <p><img src="https://unsplash.it/220/400" alt="" class="left" />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam modi sed minima consequuntur laborum porro doloribus unde alias, eligendi vel voluptas optio ipsum quae!</p>
+                <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nihil eaque quaerat, facilis dolorum suscipit, saepe maiores, optio libero dignissimos nam iure. Quaerat itaque, reprehenderit possimus cumque fuga, maxime nihil earum accusantium natus veritatis culpa quisquam optio. Harum, facilis. Quas impedit voluptates quia repellat suscipit officia quis, doloremque, beatae consequatur, quaerat commodi! Necessitatibus dolore, ipsum laudantium aperiam placeat doloribus cum. Itaque a unde totam nam sequi provident accusamus, tenetur impedit temporibus. Rerum velit voluptas eum natus cupiditate quos harum nesciunt.</p>
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, illum. Mollitia molestiae recusandae fugit dignissimos quae fugiat necessitatibus aperiam quaerat sapiente, officiis labore ullam rerum ex accusamus ratione assumenda consectetur velit ipsa odit dolorem voluptatibus nihil. Atque sunt, eveniet mollitia repellat deserunt nesciunt repellendus minus! In itaque, rerum voluptatum eum deleniti neque quis harum ipsam enim! Ex ab quas consequatur provident debitis. Facilis dignissimos laboriosam corporis, quam ipsam, sint officiis, sunt nam temporibus magni quae quisquam nihil animi minima ab! Fugiat blanditiis necessitatibus pariatur modi dolorum itaque sunt quibusdam amet quisquam corrupti similique voluptate in, quas fuga veniam harum ex.</p>
+                <blockquote class="full left">
+                  I had a dream I could buy my way to heaven, <br />
+                  when I awoke, I spent that on a necklace <br />
+                  I told God I'd be back in a second; <br />
+                  Man it's so hard not to act reckless.
+                </blockquote>
+                <hr class="flourish" />
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                <p><img src="https://picsum.photos/1100/500/" alt="cover-image-2" /></p>
+              </div>
+              <div class="content two col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nisi reiciendis illo odio soluta iusto eos quo ab numquam error nam aliquid quidem facere aperiam commodi aliquam, non excepturi, repellat expedita in alias quaerat eligendi! Illo omnis ipsam maiores porro eos voluptatum, ea distinctio perferendis:</p>
+                <blockquote class="full right">
+                  1, 2, 3 and to the 4 -
+                  Snoop Doggy Dogg and Dr. Dre is at the door.
+                  Ready to make an entrance so back on up,
+                  'cause you know we're about to rip shit up.
+                </blockquote>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit temporibus mollitia voluptate!</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis error earum ipsa recusandae, cupiditate magnam.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quis facilis fuga modi voluptate.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt aliquid quaerat quo voluptatibus excepturi, neque assumenda!</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis reiciendis suscipit dolores deleniti!</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta, fugiat sunt cum non aspernatur tempora praesentium exercitationem aliquid magnam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum itaque laudantium suscipit, id ratione in tempore voluptatum.</p>
+              </div>
+            </article>
+          </div>
+
+          
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const settingsIcon = document.querySelector(".settings-icon");
+    const settingsBox = document.getElementById("settingsBox");
+    let selectedColor = null; // No color is selected initially
+
+    // Toggle settings box on click
+    settingsIcon.addEventListener("click", function () {
+        settingsBox.classList.toggle("active");
+    });
+
+    // Close settings box when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!settingsBox.contains(event.target) && !settingsIcon.contains(event.target)) {
+            settingsBox.classList.remove("active");
+        }
+    });
+
+    // Function to change colors
+    function applyColor(color) {
+        selectedColor = color; // Store selected color
+        document.querySelectorAll(".change-bgcolor").forEach(el => el.style.backgroundColor = color);
+        document.querySelectorAll(".change-color").forEach(el => el.style.color = color);
+        document.querySelectorAll(".change-border").forEach(el => el.style.borderColor = color);
+    }
+
+    // Add event listeners to color palette options
+    document.querySelectorAll(".color-palette div").forEach(colorDiv => {
+        colorDiv.addEventListener("click", function () {
+            const chosenColor = this.style.backgroundColor;
+            applyColor(chosenColor);
+        });
+    });
+
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.querySelector(".mainbody");
+  const navToggle = document.getElementById("nav-toggle");
+
+  if (body && navToggle) {
+    body.addEventListener("click", function () {
+      navToggle.checked = true; // Only close if it's already open
+    });
+  }
+});
+
+
+    </script>
+</body>
+</html>

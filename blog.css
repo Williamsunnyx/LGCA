@@ -1,0 +1,278 @@
+
+
+.blog-wrapper {
+    color: black;
+  display: block;
+  padding: 0.9375rem;
+  float: left;
+}
+
+.blog header {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.blog header .category {
+  margin-left: 3.75rem;
+}
+.blog header .category:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: calc(17px/2);
+  left: -2.5rem;
+  width: 1.875rem;
+  height: 0;
+  border-top: solid 1px red;
+}
+.blog header .category span {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #474747;
+}
+
+.blog aside {
+  position: relative;
+  display: none;
+}
+@media (min-width: 1024px) {
+    .blog aside {
+    display: inline-block;
+    z-index: 2;
+    float: left;
+    width: 320px;
+    height: 100%;
+  }
+}
+.blog aside .chapter {
+  color: #474747;
+  background-color: #474747;
+  background-image: url("penonstack.png");
+  background-image: url("Hiking-Part-of-School-Pic-1.jpg");
+  background-image: url("https://picsum.photos/1425"), -webkit-linear-gradient(0deg, black 0%, black 100%);
+  background-size: contain;
+  background-position: right top;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(71, 71, 71, 0.4);
+  display: block;
+  float: right;
+  margin-right: 1.2875rem;
+  font-size: 30.125rem;
+}
+
+.blog article {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  float: left;
+}
+@media (min-width: 1024px) {
+    .blog  article {
+    padding-left: 1.875rem;
+    border-left: solid 1px black;
+    width: calc(100% - 320px - 1px - 15px );
+    margin-left: -3.75rem;
+    max-width: 58.75rem;
+  }
+}
+.blog article .chapter {
+  color: #474747;
+  background-color: #474747;
+  background-image: url("https://picsum.photos/1425");
+  background-image: url("https://picsum.photos/1425");
+  background-image: url("https://picsum.photos/1425"), -webkit-linear-gradient(0deg, black 0%, black 100%);
+  background-size: contain;
+  background-position: right top;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(71, 71, 71, 0.4);
+  display: inline-block;
+  font-size: 2rem;
+  width: 100%;
+}
+@media (min-width: 480px) {
+    .blog  article .chapter {
+    float: left;
+    width: auto;
+    font-size: 6.25rem;
+    padding-right: 0.9375rem;
+  }
+}
+@media (min-width: 1024px) {
+    .blog article .chapter {
+    display: none;
+  }
+}
+.blog article .title {
+  color: #474747;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.1;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  float: left;
+  margin-bottom: 0.9375rem;
+  width: 100%;
+}
+@media (min-width: 480px) {
+    .blog article .title {
+    margin-bottom: 1.875rem;
+    max-width: calc(100% - 100px - 30px - 1px);
+    padding-left: 0.9375rem;
+    border-left: solid 1px black;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+    .blog article .title {
+    border-left: none;
+    padding-left: 0;
+    display: block;
+    float: none;
+    max-width: 90%;
+  }
+}
+.blog article .title:after {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 1.75rem;
+  font-style: normal;
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 0.9375rem;
+}
+@media (min-width: 768px) {
+    .blog  article .title:after {
+    margin-top: 1.875rem;
+  }
+}
+.blog article .cover-img {
+  margin-bottom: 0.9375rem;
+}
+@media (min-width: 768px) {
+    .blog article .cover-img {
+    margin-bottom: 1.875rem;
+  }
+}
+.blog article .cover-img img {
+  width: 100%;
+}
+.blog article .content {
+  position: relative;
+  display: block;
+  margin-bottom: 0.9375rem;
+}
+@media (min-width: 768px) {
+    .blog article .content.first, article .content.two.col {
+    -webkit-columns: 2;
+    columns: 2;
+  }
+}
+.blog article .content h3 {
+  display: inline-block;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-top: 1.25rem;
+  margin-bottom: 0.9375rem;
+}
+@media (min-width: 768px) {
+    .blog article .content h3 {
+    font-size: 1.3125rem;
+  }
+}
+.blog article .content h4 {
+  display: inline-block;
+  color: #474747;
+  font-size: 1.0625rem;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 768px) {
+    .blog article .content h4 {
+    font-size: 1.125rem;
+  }
+}
+.blog article .content p {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  margin-bottom: 0.9375rem;
+}
+.blog article .content img {
+  width: 100%;
+}
+@media (min-width: 640px) {
+    .blog article .content img {
+    width: initial;
+    max-width: 100%;
+  }
+}
+.blog article .content img.right {
+  margin: 0 0 0.625rem 0.625rem;
+  float: right;
+}
+.blog article .content img.left {
+  margin: 0 0.625rem 0.625rem 0;
+  float: left;
+}
+.blog article .content ul {
+  margin-left: 1.0625rem;
+  list-style: circle;
+}
+.blog article .content ul li {
+  font-size: 0.9375rem;
+  margin-bottom: 0.625rem;
+  line-height: 1.5;
+}
+.blog article blockquote {
+  font-size: 1.4375rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 0.9375rem;
+  display: inline-block;
+  width: calc(100% - 15px - 20px - 10px);
+}
+@media (min-width: 768px) {
+    .blog article blockquote {
+    width: 75%;
+    font-size: 1.625rem;
+  }
+}
+.blog article blockquote.right {
+  float: right;
+  text-align: right;
+  border-right: solid 10px #474747;
+  margin-left: 0.9375rem;
+  margin-right: 0;
+  padding-right: 1.25rem;
+}
+.blog article blockquote.left {
+  float: left;
+  text-align: left;
+  padding-left: 1.25rem;
+  border-left: solid 10px #474747;
+  margin-right: 0.9375rem;
+  margin-left: 0;
+}
+.blog article blockquote.full {
+  width: calc(100% - 15px - 20px - 10px);
+  float: none;
+}
+.blog article .flourish {
+  margin: 1.875rem 0;
+  -webkit-border-image: -webkit-linear-gradient(-360deg, transparent 0%, #333333 50%, transparent 100%) 1;
+  border-image: linear-gradient(90deg, transparent 0%, #333333 50%, transparent 100%) 1;
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-bottom-color: transparent;
+}

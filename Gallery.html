@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+
+    
+</head>
+<body>
+  <div class="settings-box" id="settingsBox">
+		<div class="settings-icon" onclick="toggleColorBox()">
+			<i class="fas fa-palette"></i>
+		</div>
+		<div class="color-options">
+			<p>Choose Your Style:</p>
+			<div class="color-palette">
+				<div style="background:  rgb(214, 108, 2);" onclick="applyColor(' rgb(214, 108, 2)')"></div>
+				<div style="background: rgb(114, 31, 0);" onclick="applyColor('rgb(114, 31, 0)')"></div>
+				<div style="background: rgb(1, 118, 168);" onclick="applyColor('rgb(1, 118, 168)')"></div>
+				<div style="background: rgb(60, 0, 97);" onclick="applyColor('rgb(60, 0, 97)')"></div>
+	
+			</div>
+		</div>
+	</div>
+
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox"/>
+        <div id="nav-header"><a id="nav-title" href="https://codepen.io" target="_blank">LGC-Academy<i class="fas fa-graduation-cap"></i></a>
+          <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+          <hr/>
+        </div>
+        <div id="nav-content">
+          <div onclick="window.open('LCA.html', '_self')" class="nav-button" ><i class="fas fa-home"></i><span>Home</span></div>
+          <div   onclick="window.open('about.html', '_self')" class="nav-button" style="display: flex;"><i class="fas fa-address-card"></i><span>About Us</span></div>
+          <div onclick="window.open('courses.html', '_self')"  class="nav-button"><i class="fas fa-chalkboard"></i><span>Courses</span></div>
+          <hr/>
+          <div onclick="window.open('blog.html', '_self')" class="nav-button"><i class="fas fa-newspaper"></i><span>Blog</span></div>
+          <div class="nav-button"><i class="fas fa-calendar-check"></i><span>Events</span></div>
+          <div class="nav-button"><i class="fas fa-address-book"></i><span>Contact</span></div>
+          <div class="nav-button  change-bgcolor" style="border-radius: 16px 0 0 16px;"><i class="fas fa-images"></i><span>Gallery</span></div>
+
+          <hr/>
+          <div class="nav-button"><a href=""><i class="fas fa-user-plus"></i><span>Apply</span></a></div>
+
+          <div id="nav-content-highlight"></div>
+        </div>
+        <input id="nav-footer-toggle" type="checkbox"/>
+        <div id="nav-footer">
+          <div id="nav-footer-heading">
+            <div id="nav-footer-avatar"><img src="LIFEGATE.png"/></div>
+            <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+          </div>
+          <div id="nav-footer-content">
+            <div class="introduction">
+              <p>Dedicated to nurturing young minds and shaping future leaders, We 
+                stands as a beacon of excellence, providing a holistic education 
+                that combines academic rigor, innovative teaching methods, 
+                and a supportive environment. With a focus on quality learning, 
+                LGCA empower students to excel in their studies, discover their passions, 
+                and develop the skills needed to thrive in a dynamic world.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="mainbody">
+
+<!--
+      
+-->
+  <div class="gallery-body">
+
+
+<div class="blur"></div>
+<nav class="barStyle topBar">
+  <span>LGCA</span><strong>Studio</strong>
+  <button class="menuButton">
+    <div class="menu-icon"></div>
+  </button>
+</nav>
+<div class="container">
+  <div class="horizontal">
+<!--     <div class="card"></div> -->
+    <img src="young-basketball-player-shoot.jpg" alt="1">
+  </div>
+  <div class="vertical"><img src="children-with-flowers-balloons-holiday-1st-september_929087-2798.jpg" alt="2"></div>
+  <div class="horizontal"><img src="birthday-party-concept-with-young-persons.jpg" alt="3"></div>
+  <div class="big"><img src="back-view-woman-holding-meeting-work-with-colleagues.jpg" alt="4"></div>
+  <div class="vertical"><img src="2gradchild.jpg" alt="5"></div>
+  <div><img src="girls-hugging-graduation.jpg" alt="6"></div>
+  <div class="vertical"><img src="kids-celebrating-kindergarten-graduation.jpg" alt="7"></div>
+  <div><img src="little-kids-halloween-party.jpg" alt="8"></div>
+  <div><img src="medium-shot-kids-laying-grass.jpg" alt="8.1"></div>
+  <div><img src="medium-shot-smiley-people-clay-sculpting.jpg" alt="9"></div>
+  <div class="big"><img src="boy-scouts-spending-time-nature.jpg" alt="10"></div>
+  <div><img src="6gradchild.jpg" alt="11"></div>
+  <div class="horizontal"><img src="close-up-kid-while-having-technology-education-class.jpg" alt="12"></div>
+  <div><img src="5gradchild.jpg" alt="12.1"></div>
+  <div class="horizontal"><img src="medium-shot-happy-kids-with-prize.jpg" alt="13"></div>
+  <div><img src="classroomstud3.avif" alt="12.1"></div>
+  <div><img src="portrait-female-ventriloquist-with-puppet-show.jpg" alt="12.1"></div>
+
+</div>
+
+<div class="border leftNavBar centerItem">
+  <ul>
+    <li><a href="">All</a></li>
+    <li><a class="active" href="">Campus</a></li>
+    <li><a href="">Events</a></li>
+    <li><a href="">Students</a></li>
+
+  </ul>
+</div>
+<div class="searchDiv"><img src="https://i.dlpng.com/static/png/255423_preview.png" alt=""></div>
+<div class="border aside">
+  <a href="https://twitter.com/nuclearfischion"><i class="fab fa-instagram centerItem"></i></a>
+  <a href="https://twitter.com/nuclearfischion"><i class="fab fa-facebook-square centerItem"></i></a>
+  <a href="https://twitter.com/nuclearfischion"><i class="fab fa-twitter centerItem"></i></a>
+  <a href="https://twitter.com/nuclearfischion"><i class="fab fa-google-plus-g centerItem"></i></a>
+</div>
+<div class="arrowButton">
+  <button><div class="arrowUpIcon"></div></button>
+  <button onClick="scroll(0, 100);"><div class="arrowDownIcon"></div></button>
+</div>
+
+
+<div class="footer">
+  <div class="scroll-icon-wrapper">
+      <img class="scroll-icon" src="https://drive.google.com/uc?export=view&id=1NqmpdNb-FhfYNHXwEsKImMRg_PQuGsf4" alt="">
+  </div>
+
+</div>
+<div class="footer-right">
+  <span class="h1" id="current-date"></span>
+  <p id="current-time"></p>
+</div>
+
+</div>
+
+
+          
+    </div>
+
+    
+
+<script>
+  	/* COLOR PALLET*/
+document.addEventListener("DOMContentLoaded", function () {
+    const settingsIcon = document.querySelector(".settings-icon");
+    const settingsBox = document.getElementById("settingsBox");
+    let selectedColor = null; // No color is selected initially
+
+    // Toggle settings box on click
+    settingsIcon.addEventListener("click", function () {
+        settingsBox.classList.toggle("active");
+    });
+
+    // Close settings box when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!settingsBox.contains(event.target) && !settingsIcon.contains(event.target)) {
+            settingsBox.classList.remove("active");
+        }
+    });
+
+    // Function to change colors
+    function applyColor(color) {
+        selectedColor = color; // Store selected color
+        document.querySelectorAll(".change-bgcolor").forEach(el => el.style.backgroundColor = color);
+        document.querySelectorAll(".change-color").forEach(el => el.style.color = color);
+        document.querySelectorAll(".change-border").forEach(el => el.style.borderColor = color);
+    }
+
+    // Add event listeners to color palette options
+    document.querySelectorAll(".color-palette div").forEach(colorDiv => {
+        colorDiv.addEventListener("click", function () {
+            const chosenColor = this.style.backgroundColor;
+            applyColor(chosenColor);
+        });
+    });
+
+
+});
+
+// Function to update the current date
+function updateDateAndTime() {
+      const today = new Date();
+      const day = today.getDate(); // Get the current day
+      const month = today.getMonth() + 1; // Get the current month (0-based index, so +1)
+      const year = today.getFullYear(); // Get the current year
+
+      // Get the current time
+      const hours = String(today.getHours()).padStart(2, '0'); // Get hours and format as 2 digits
+      const minutes = String(today.getMinutes()).padStart(2, '0'); // Get minutes and format as 2 digits
+      const seconds = String(today.getSeconds()).padStart(2, '0'); // Get seconds and format as 2 digits
+
+      // Display the date as "Day/Month/Year"
+      document.getElementById("current-date").textContent = `${day}/${month}/${year}`;
+      
+      // Display the time as "HH:MM:SS"
+      document.getElementById("current-time").textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Update the date and time when the page loads
+    setInterval(updateDateAndTime, 1000); // Update every second
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.querySelector(".mainbody");
+  const navToggle = document.getElementById("nav-toggle");
+
+  if (body && navToggle) {
+    body.addEventListener("click", function () {
+      navToggle.checked = true; // Only close if it's already open
+    });
+  }
+});
+</script>
+</body>
+</html>

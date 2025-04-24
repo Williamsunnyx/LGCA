@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCA </title>
+    <link rel="stylesheet" href="LCA.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+        <!--SUB HEADER-->
+
+        <div class="sub-header">
+            <div class="logo">
+                <img src="LIFEGATE.png" alt="Logo">
+            </div>
+            <div class="nav">
+                <a href="#" id="login"><i class="fas fa-sign-in-alt change-color"></i> Login</a>
+                <a href="#" id="register"><i class="fas fa-phone change-color"></i> Get in Touch</a>
+                <div class="search-container">
+                    <input type="text" id="search" class="search-input" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                    <div class="suggestions" id="suggestions"></div>
+                </div>
+            </div>
+        </div>
+       
+
+        <!--MAIN HEADER-->
+        <div class="mainhead-header" >
+
+            <div class="mainhead-menu-icon change-color" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="mainhead-nav">
+                <li><a href="#mainhead-home" class="change-bgcolor" style="color: white;">Home</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#whoweare">Who We Are</a>
+                        <a href="#ins">Insights</a>
+                        <a href="#News">Latest News</a>
+
+                    </div>
+                </li>
+
+                <li><a href="about.html">About Us</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#">Mision</a>
+                        <a href="#">The Team</a>
+                        <a href="#">Archievements</a>
+                        <a href="#">Why Choose Us</a>
+                        <a href="#">What They Say</a>
+
+
+
+                    </div>
+                </li>
+                <li><a href="#mainhead-blog">Courses</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#">Basic</a>
+                        <a href="#">High School</a>
+                        <a href="#">online Courses</a>
+
+                    </div>
+                </li>
+                <li><a href="courses.html">Blog</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#">Sports</a>
+                        <a href="#">News</a>
+                    </div>
+                </li>
+                <li><a href="#mainhead-events">Events</a>
+                    <div class="mainhead-dropdown change-bgcolor" >
+                        <a href="#">Upcoming</a>
+                        <a href="#">Past Events</a>
+                    </div>
+                </li>
+
+                <li><a href="#mainhead-contact">Contact</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#">Apply</a>
+                        <a href="#">Email Us</a>
+                        <a href="#">Support</a>
+                        <a href="#">Enquiry</a>
+
+                    </div>
+                </li>
+
+                <li><a href="#mainhead-contact">Gallery</a>
+                  <div class="mainhead-dropdown change-bgcolor">
+                      <a href="#">Campus</a>
+                      <a href="#">Students</a>
+                      <a href="#">Events</a>
+                      <a href="#">Memories</a>
+
+                  </div>
+              </li>
+            </ul>
+            <div class="mainhead-phone-number change-bgcolor">
+                <i class="fa-solid fa-user-plus"></i>
+                <b>APPLY NOW</b>
+            </div>
+        </div>
+
+</header>
+
+<section id="Homebody">
+
+<!--
+  <div class="slider change-bgcolor" id="whoweare" >
+    <div class="slide">
+        <img src="classroomstud.avif" alt="Image 1">
+        <center><button>VIEW COURSES</button></center>
+    </div>
+    <div class="slide">
+        <img src="classroomstud2.webp" alt="Image 2">
+        <center><button>VIEW COURSES</button></center>
+    </div>
+
+    <div class="slide">
+        <img src="classroomstud3.avif" alt="Image 3">
+        <center><button>VIEW COURSES</button></center>
+    
+    </div>
+</div >  
+-->
+
+
+<div class="slider" id="slider" style="--img-prev:url(https://lh3.googleusercontent.com/aC9nyW5dhaYFmWD8fcf8DApjpH08eHEkbCHqmUPHRQ5T3jK-QyNKZYVMehmrvyPdEA_KxWvgZ3_kyOOYOAv99Ow3UoKSvEloleVKGSfLOwOyDV3Q6Dwi1G-NYoa9-t_ofmmskE6BYnVIOnIz2HWlMcijzIEwvKAL_R4z63DaLgG0z_OcGiSQHunwGAPXrBQUv42ZXuIMODq4zxDHczSxJ72b0-_udtdQK3JuT2X8nXCwFoF7GxmOpzXS0H5f50DuCbXoXcx-O7bgBMCXZdMpTxB27-wdXeLmxpYUySXgjSN2NAKmK16DmGLYvw5tMlrqwb8h4MJEEbXjP1pjPxXsahb7UZseEGyn80uLjATANJvusyJWCtzkkxYXPz-yI1rDvfEJKe2eyA-5AvFlzFBSwBMASn8f7mXinUrXMMREkJQjoi89NfZ91G7253OEVQOqcWxddiYtcHCO5v6Pl3QfV2SUTWXgggscDSY2ezjSPpYERNTXnIM_aCyWmIG7ybrfqOB0eVYBAgynyuPVbjd4KuZWZq2Dfu33HX1RuPKglbOuZGD1QbpJnruvUVkAmjDXI40ENN7X=w1600-h766);"> 
+    <div class="slider__content" id="slider-content">
+      <div class="slider__images">
+        <div class="slider__images-item slider__images-item--active" data-id="1"><img src="classroomstud.avif"/></div>
+        <div class="slider__images-item" data-id="2"><img src="kindergatenchild2.webp"/></div>
+        <div class="slider__images-item" data-id="3"><img src="medium-shot-smiley-people-clay-sculpting.jpg"/></div>
+        <div class="slider__images-item" data-id="4"><img src="young-kids-performing-play-theatre-stage-celebrate-world-theatre-day.jpg"/></div>
+        <div class="slider__images-item" data-id="5"><img src="girls-hugging-graduation.jpg"/></div>
+      </div>
+      <div class="slider__text">
+        <div class="slider__text-item slider__text-item--active" data-id="1">
+          <div class="slider__text-item-head">
+            <h3>Aspire</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Reach for greatness, dream big, stay motivated.”</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="2">
+          <div class="slider__text-item-head">
+            <h3>Flourish</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Grow with passion, learn, and shine bright.”</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="3">
+          <div class="slider__text-item-head">
+            <h3>Discover</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Explore ideas, seek wisdom, embrace learning.”</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="4">
+          <div class="slider__text-item-head">
+            <h3>Empower</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Gain knowledge, build confidence, change the world.”</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="5">
+          <div class="slider__text-item-head">
+            <h3>Succeed</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“hard Work, stay focused, achieve goals.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider__nav">
+      <div class="slider__nav-arrows">
+        <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+        <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+      </div>
+      <div class="slider__nav-dots" id="slider-dots">
+        <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+        <div class="slider__nav-dot" data-id="2"></div>
+        <div class="slider__nav-dot" data-id="3"></div>
+        <div class="slider__nav-dot" data-id="4"></div>
+        <div class="slider__nav-dot" data-id="5"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+<div class="head scroll-reveal" >
+    <h1>Life At LifeGate Christian Academy</h1>
+</div>
+<div class="allcampus" >
+
+    <div class="section over-hide scroll-reveal" style="margin: 20px;">
+    
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section text-center py-5 py-md-0">
+                          <input onclick="toggleLife()" class="pricing  scroll-reveal" type="checkbox" id="pricing" name="pricing"/>
+                          <label for="pricing">
+                            <span class="block-diff">Campus</span>
+                            <span class="float-right block-diff">Leisure</span>
+                          </label>
+    
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="pricing-wrap">
+                                       
+                                        <div class="pricing-detail">
+                                        <h4 class="mb-5">Campus</h4>
+                                        <h2 class="mb-2">Seminars </h2>
+                                        <p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p><br><br><br>
+                                        <a href="#0" class="link change-bgcolor">Apply Now</a>
+
+                                        </div>
+                                        
+                                        <div class="img-wrap img-2">
+                                            <img src="https://assets.codepen.io/1462889/sea.png" alt="">
+                                        </div>
+                                        <div class="img-wrap img-1">
+                                            <img src="studentonabookpile.png" alt="">
+                                        </div>
+                                        <div class="img-wrap img-3">
+                                            <img src="copy-space-girl-concentrated-reading.png" alt="">
+                                        </div>
+                                        <div class="img-wrap img-6">
+                                            <img src="bookcap.png" alt="">
+                                        </div>
+                                      </div>
+                                  </div>
+                                  
+                                <div class="card-back">
+                                    <div class="pricing-wrap">
+    
+                                        <div class="pricing-detail">
+                                        <h4 class="mb-5">Leisure</h4>
+                                        <h2 class="mb-2">Field Trips</h2>
+                                        <p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p><br><br><br>
+                                        <a href="#0" class="link change-bgcolor">Apply Now</a>
+                                        </div>
+    
+                                        <div class="img-wrap img-2">
+                                            <img src="https://assets.codepen.io/1462889/grass.png" alt="">
+                                        </div>
+                                        <div class="img-wrap img-4">
+                                            <img src="https://assets.codepen.io/1462889/camp.png" alt="">
+                                        </div>
+                                        <div class="img-wrap img-5">
+                                            <img src="https://assets.codepen.io/1462889/Ivy.png" alt="">
+                                        </div>
+                                        <div class="img-wrap img-7">
+                                            <img src="https://assets.codepen.io/1462889/IvyRock.png" alt="">
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+    
+    </div>
+    
+    <div style="width: 100%;">
+    
+    <div id="lifecontent1" class="lifecontent lifevisible" style="margin: 20px;">
+        <div class='card__content padding-large--l' style="  box-shadow: 3px 1px 3px rgba(0, 10, 20, 0.06)">
+            <h2 class="scroll-reveal">True Learning </h2>
+            <p class=" scroll-reveal">With a serene atmosphere that fosters concentration and creativity, 
+                we provide the ideal setting for students to thrive. Our approach 
+                integrates intensive learning with hands-on experience, discipline 
+                with personal freedom, and spiritual growth with academic excellence.
+                At Life Gate Christian Academy, we are committed to shaping well-rounded 
+                individuals who are prepared for both life and leadership.
+            </p>
+            <div class='card__button'>Join Now...</div>
+
+            <div class='card card--featured'>
+                <div class='card__side-by-side--m' style="height: 200px;">
+                    <div class='card__content padding-large--l' >
+                        <h2 class=" scroll-reveal">Be Part Of This</h2>
+                        <p class=" scroll-reveal">Join us on this transformative journey—where knowledge meets character, and students become future leaders.</p>
+                        
+            
+                      </div>
+                  <div class='card__image scroll-reveal'>
+                    <img src='young-student-looking-book-library.jpg'>
+                  </div>
+
+                </div>
+              </div>
+        </div>
+    
+
+    </div>
+    
+    <div id="lifecontent2" class="lifecontent lifehidden"  style="margin: 20px;">
+        <div class='card__content padding-large--l' style="  box-shadow: 3px 1px 3px rgba(0, 10, 20, 0.06)">
+            <h2 class=" scroll-reveal">Relate - Engage.</h2>
+            <p class=" scroll-reveal">
+                Our nature-based activities, including Field trips and environmental excursions, 
+                promote a deeper understanding of sustainability, conservation, and stewardship 
+                of God's creation. These outings not only enhance environmental awareness but 
+                also provide students with a healthy, refreshing break from their academic routines.
+                Tourism and cultural excursions are deeply integral to our curriculum, expanding students'
+                horizons and fostering a spirit of empathy and global awareness. These joy-packed activities encourage
+                students to engage with diverse communities and embrace the beauty of God's diverse world.
+            </p>
+            
+            <div class='card__button  scroll-reveal'>Join Now...</div>
+
+            <div class='card card--featured' style="justify-content: space-between;">
+                <div class='card__side-by-side--m' style="height: 200px;">
+                  <div class='card__image  scroll-reveal'>
+                    <img src='medium-shot-smiley-people-clay-sculpting.jpg'>
+                  </div>
+                  <div class='card__image  scroll-reveal'>
+                    <img src='boy-scouts-spending-time-nature.jpg'>
+                  </div>
+                </div>
+              </div>
+        </div>
+    
+
+    </div>
+    </div>
+    
+    
+    </div>
+    
+
+<!--
+<div class="feature-container">
+    <div class="feature-feature-box scroll-reveal" onclick="openOverlay('feature-overlay1')">
+        <div class="feature-icon-box change-border">
+            <div class="fa-solid fa-book-bookmark"></div>
+        </div>
+        <h3>Empowering Lifelong Learners</h3>
+        <p>
+            providing a variety of resources, courses, and
+            learning experiences tailored in helping future Leader
+            at every stage of their life.
+        </p>
+        <div class="feature-read-more change-bgcolor">Read More</div>
+    </div>
+
+    <div class="feature-feature-box scroll-reveal" onclick="openOverlay('feature-overlay2')">
+        <div class="feature-icon-box change-border">
+            <i class="fa-solid fa-microscope"></i>
+        </div>
+        <h3>Excellence & Innovation</h3>
+        <p>
+            Dedicated team of educators, innovators, and industry professionals
+            Seasoned to empower learners with the knowledge and skills 
+            they need to thrive in an ever-changing world.
+        </p>
+        <div class="feature-read-more change-bgcolor">Read More</div>
+    </div>
+
+    <div class="feature-feature-box scroll-reveal" onclick="openOverlay('feature-overlay3')">
+        <div class="feature-icon-box change-border">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3>Guiding Future Leaders</h3>
+        <p>
+            offering a broad spectrum of educational programs designed to cultivate critical thinking, 
+            problem-solving, and leadership skills.
+        </p>
+        <div class="feature-read-more change-bgcolor">Read More</div>
+    </div>
+</div>
+
+
+<div class="feature-overlay" id="feature-overlay1">
+    <div class="feature-feature-overlay-content">
+        <span class="feature-close-btn change-color" onclick="closeOverlay('feature-overlay1')">&times;</span>
+        <h2>Feature 1</h2>
+        <p>Full details for Feature 1...</p>
+    </div>
+</div>
+<div class="feature-overlay" id="feature-overlay2">
+    <div class="feature-feature-overlay-content">
+        <span class="feature-close-btn change-color" onclick="closeOverlay('feature-overlay2')">&times;</span>
+        <h2>Feature 2</h2>
+        <p>Full details for Feature 2...</p>
+    </div>
+</div>
+<div class="feature-overlay" id="feature-overlay3">
+    <div class="feature-feature-overlay-content">
+        <span class="feature-close-btn change-color" onclick="closeOverlay('feature-overlay3')">&times;</span>
+        <h2>Feature 3</h2>
+        <p>Full details for Feature 3...</p>
+    </div>
+</div>
+
+
+-->
+
+
+
+
+
+<div class='main-container'>
+    <div class='grid-container'>
+      <div class='card card--2x  scroll-reveal'>
+        <div class='card__content big-script padding-large'>
+          <p class=" scroll-reveal">Excellence through study and play</p>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__image  scroll-reveal'>
+          <img src='schoolgatemodern.webp'>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__image  scroll-reveal'>
+          <img src='white-facade-blue-sky.jpg'>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__content scroll-reveal'>
+          <p><em>True excellence grows where discipline, practice, and passion meet.</em></p>
+          <p>— Mark Mills</p>
+        </div>
+      </div>
+      <div class='card card--horizontal'>
+        <div class='card__image  scroll-reveal'>
+          <img src='view-school-building.jpg'>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__image  scroll-reveal'>
+          <img src='medium-shot-happy-kids-with-prize.jpg'>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<div id=""></div>
+
+<div class="parallax height">
+
+    <div class=" paraflex">
+
+        
+       <div class="contr"> 
+    <p>
+        <div class="head scroll-reveal" style="text-align: left;">
+            <h2>WELCOME TO DISCIPLINE <sup> <i class="fa-solid fa-star change-color" style="font-size: 30px;position: relative;bottom: 10px;"></i></sup></h2>
+        </div>
+        At LGCA, we've come up with the perfect mix: unbeatable academic 
+        training, a caring community where lifelong friendships are born
+        and a beautiful campus located in the most seren Environs. 
+        We are a Hispanic-serving institution where 
+        99.9% of our enrolled students receive quality Expositories. With outstanding
+        faculty and small class sizes - 30 students on average - every diploma 
+        is backed by personalized instruction and a strong spiritual foundation
+        that puts Christ at the center of it all. Our distinguished list of 
+        alumni include leading scientists, best-selling authors, network television
+        and film studio producers, Broadway entertainers, top political analysts
+        and world-changing ministers. We go beyond scholarship, beyond the classroom,
+        and beyond the expected—equipping you to lead the story God has for you.
+        
+    </p>
+        <p>
+        <Button class="change-bgcolor">View More</Button>
+        </p>
+    </div>
+
+    <img src="excited-woman-with-diploma.png" alt="">
+        
+</div>
+
+
+</div>
+
+
+
+
+<div class="timeline-body" id="ins">
+
+    <div class="timeline">
+        <div class="line scroll-reveal"></div>
+        <div class="event">
+            <div class="text scroll-reveal">STARTED</div>
+            <div class="circle change-bgcolor scroll-reveal"></div>
+            <div class="message-box change-border scroll-reveal">2010</div>
+        </div>
+        <div class="event">
+            <div class="message-box change-border scroll-reveal">2015</div>
+            <div class="circle change-bgcolor scroll-reveal"></div>
+            <div class="text scroll-reveal">Over 3000+ STUDENTS</div>
+        </div>
+        <div class="event">
+            <div class="text scroll-reveal">30+ Best School AWARDS</div>
+            <div class="circle change-bgcolor scroll-reveal"></div>
+            <div class="message-box change-border scroll-reveal">2025</div>
+        </div>
+    
+        
+    </div>
+    </div>
+    
+    <div class="small-timeline" >
+        <div class="small-timeline-connector change-bgcolor scroll-reveal"></div>
+    
+        <div class="small-timeline-feature">
+            <div class="small-timeline-circle change-bgcolor scroll-reveal"><b>2010</b></div>
+            <p class="scroll-reveal"><strong>STARTED</strong></p>
+        </div>
+    
+        <div class="small-timeline-feature">
+            <div class="small-timeline-circle change-bgcolor scroll-reveal"><b>2015</b></div>
+            <p style="left: 10px;" class="scroll-reveal"><strong>Over 3000+ STUDENTS</strong></p>
+        </div>
+    
+        <div class="small-timeline-feature">
+            <div class="small-timeline-circle change-bgcolor scroll-reveal"><b>2022</b></div>
+            <p class="scroll-reveal"><strong>20+ SCHOOLS</strong></p>
+        </div>
+    
+        <div class="small-timeline-feature">
+            <div class="small-timeline-circle change-bgcolor scroll-reveal"><b>2025</b></div>
+            <p style="left: 10px;" class="scroll-reveal"><strong>30+ Best School AWARDS</strong></p>
+        </div>
+    
+    
+    </div>
+    <div style="background: #2b2a2b;width: 100%;padding: 20px;">
+
+        <div class="head scroll-reveal" style="display: flex;align-items: center;justify-content: center;color: white;">
+            <h2 >DID YOU KNOW <i class="fa-solid fa-question change-color"></i></h2>
+        </div>
+        <div class="wrapper">
+            <i class="fa-solid fa-angle-left"></i>
+    
+            <ul class="carousel scroll-reveal">
+               
+               
+               
+                <li class="card">
+                    <h2>99.9%</h2>
+                    <span>of students receives great Attention</span>
+                    <div class="liness"></div>
+    
+                </li>
+                <li class="card">
+                    <h2>18:1</h2>
+                    <span>Student-to-faculty ratio</span>
+                    <div class="liness"></div>
+    
+                </li>
+                <li class="card">
+                    <h2>60%</h2>
+                    <span>of students lives in our well equpped Dorms</span>
+                    <div class="liness"></div>
+    
+                </li>
+                <li class="card">
+                    <h2>17+</h2>
+                    <span>Inter continental Languages</span>
+                    <div class="liness"></div>
+    
+                </li>
+                <li class="card">
+                    <h2>35%</h2>
+                    <span>of students receives financial aids</span>
+                    <div class="liness"></div>
+    
+                </li>
+                <li class="card">
+                    <h2>40+</h2>
+                    <span>intramural sports and campus clubs</span>
+                    <div class="liness"></div>
+    
+                </li>
+                <li class="card">
+                    <h2>89%</h2>
+                    <span>digital smart classrooms</span>
+                    <div class="liness"></div>
+    
+                </li>
+                <li class="card">
+                    <h2>30+</h2>
+                    <span>natural parks on campus</span>
+                    <div class="liness"></div>
+    
+                </li>
+    
+            </ul>
+    
+            <i class="fa-solid fa-angle-right"></i>
+    
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+<div class="parallax" >
+
+    <div class="" style="display: flex;align-items: center;justify-content: center;">
+        <h2 >FIND YOUR MAJOR</h2>
+    </div>
+    
+    <div class="courses-container"> 
+        <div class="courses-card"> 
+          <div class="courses-box"> 
+            <div class="courses-content"> 
+              <h2>01</h2> 
+              <h3>Basic Class</h3> 
+                <p>Standarard foundational learning for young, curious minds.</p> 
+              <a href="#">Register</a> 
+            </div> 
+          </div> 
+        </div> 
+      
+        <div class="courses-card"> 
+          <div class="courses-box"> 
+            <div class="courses-content"> 
+              <h2>02</h2> 
+              <h3>High School</h3> 
+                <p>Empowering students for success and leadership through quality Ethics.</p> 
+              <a href="#">Register</a> 
+            </div> 
+          </div> 
+        </div> 
+      
+        <div class="courses-card"> 
+          <div class="courses-box"> 
+            <div class="courses-content"> 
+              <h2>03</h2> 
+              <h3>College</h3> 
+                <p>Experience excellence in education, growth, and leadership opportunities.</p> 
+              <a href="#">Register</a> 
+            </div> 
+          </div> 
+        </div> 
+    
+        <div class="courses-card"> 
+            <div class="courses-box"> 
+              <div class="courses-content"> 
+                <h2>04</h2> 
+                <h3>Professional</h3> 
+                <p>Exceptional Tailored online courses for professionals to excel globally.</p> 
+                <a href="#">Register</a> 
+              </div> 
+            </div> 
+          </div> 
+      </div>
+
+</div>
+
+
+
+<div class="scroll-reveal">
+
+    <div class="head ">
+        <div class="head scroll-reveal" >
+            <h1>Where Our Standard has been Matched</h1>
+        </div>
+    </div>
+    
+    <!--
+    <div class="where-slider-container">
+        <div class="where-slider">
+            <div class="where-slide"><img src="AirForce.webp" alt="School Logo 1"></div>
+            <div class="where-slide"><img src="AlabamaUniversity.webp" alt="School Logo 2"></div>
+            <div class="where-slide"><img src="ArkansasRazorbacks.webp" alt="School Logo 3"></div>
+            <div class="where-slide"><img src="Auburn-Tigers.webp" alt="School Logo 4"></div>
+            <div class="where-slide"><img src="BaylorPennant.webp" alt="School Logo 5"></div>
+            <div class="where-slide"><img src="Brown.webp" alt="School Logo 6"></div>
+            <div class="where-slide"><img src="Columbia-1.webp" alt="School Logo 6"></div>
+            <div class="where-slide"><img src="Copy-of-AbileneChristianUniv.webp" alt="School Logo 6"></div>
+            <div class="where-slide"><img src="Copy-of-MississippiStateUniv.webp" alt="School Logo 6"></div>
+            <div class="where-slide"><img src="OSUz_Penant.webp" alt="School Logo 6"></div>
+    
+        </div>
+        <div class="where-controls">
+            <button class="where-prev" onclick="wherePrevSlide()">&#10094;</button>
+            <button class="where-next" onclick="whereNextSlide()"> &#10095;</button>
+        </div>
+    </div>
+    -->
+    
+    
+    <div class="marquee">
+        <ul class="marquee-content">
+          <li>
+            <img src="AirForce.webp" alt="School Logo 1">  
+          </li>
+          <li>
+            <img src="AlabamaUniversity.webp" alt="School Logo 2">  
+          </li>
+          <li>
+            <img src="ArkansasRazorbacks.webp" alt="School Logo 3"></li>
+          </li>
+          <li>
+            <img src="Auburn-Tigers.webp" alt="School Logo 4">
+          </li>
+          <li>
+            <img src="BaylorPennant.webp" alt="School Logo 5">
+          </li>
+          <li>
+            <img src="Brown.webp" alt="School Logo 6">
+          </li>
+          <li>
+            <img src="Columbia-1.webp" alt="School Logo 7">
+          </li>
+          <li>
+            <img src="Copy-of-AbileneChristianUniv.webp" alt="School Logo 8">
+          </li>
+          <li>
+            <img src="Copy-of-MississippiStateUniv.webp" alt="School Logo 6">
+          </li>
+          <li>
+            <img src="OSUz_Penant.webp" alt="School Logo 6"></li>
+          </li>
+         
+    
+        </ul>
+      </div>
+    
+
+</div>
+
+
+<div class="parallax" style="height: 150px;" id="News">
+</div>
+
+<section id="eventbody">
+
+
+    <main>
+        <h1>Events</h1>
+        <section>
+          <h2>5th May</h2>
+          <div class="grid-wrapper">
+            <article>
+              <h3>9:00 AM</h3>
+              <p>Orientation Program – Introduction for new students to campus life, policies, and academic expectations. </p>
+            </article>
+            <article>
+              <h3>10:00 AM</h3>
+              <p>Guest Lectures & Webinars – Talks from industry experts, professors, or alumni on trending topics. </p>
+            </article>
+            <article>
+              <h3>12:30 AM</h3>
+              <p>Faculty Meet & Greet – Interaction between students and faculty members.</p>
+            </article>
+            <article>
+              <h3>13:30 AM</h3>
+              <p>Career Fair & Networking Events – Opportunities for students to meet recruiters and learn about job prospects. </p>
+              <img src="little-kids-halloween-party.jpg" alt="Black and white photo of a lake">
+      
+            </article>
+            <article>
+              <h3>14:30 AM</h3>
+              <p>Workshops & Training Sessions – Skill-building events on research methodologies, coding, design, public speaking, etc. </p>
+            </article>
+            <article>
+              <h3>15:30 AM</h3>
+              <p>ISports Tournaments – Football, basketball, cricket, and e-sports competitions. </p>
+            </article>
+            <article>
+              <h3>16:30 AM</h3>
+              <p>Alumni Meetups – Reunions and networking with past graduates. </p>
+            </article>
+            <article>
+              <h3>17:30 AM</h3>
+              <p>Annual Academic Awards & Convocation – Recognition of academic excellence and graduation ceremony. </p>
+              <img src="birthday-party-concept-with-young-persons.jpg"" alt="Black and white Mountian view">
+            </article>
+          </div>
+        </section>
+ 
+ <!--
+        <section>
+
+              <h2>3 April</h2>
+          <div class="grid-wrapper">
+            <article>
+              <h3>9:00 AM</h3>
+              <p>Student Council Elections – Voting for student leadership roles. </p>
+            </article>
+            <article>
+              <h3>10:00 AM</h3>
+              <p>Internship & Placement Drives – Recruitment sessions for students.</p>
+            </article>
+            <article>
+              <h3>12:30 AM</h3>
+              <p>IDebates & Public Speaking Contests – Improve confidence and critical thinking.</p>
+            </article>
+            <article>
+              <h3>13:30 AM</h3>
+              <p>Annual Day & Founders’ Day Celebrations – Honoring the institution’s legacy.</p>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Eiffel_tower_at_Exposition_Universelle%2C_Paris%2C_1889.jpg/1200px-Eiffel_tower_at_Exposition_Universelle%2C_Paris%2C_1889.jpg" alt="Black and White Eiffel Tower">
+            </article>
+            <article>
+              <h3>14:30 AM</h3>
+              <p>Annual Sports Meet – Track and field events for students.</p>
+            </article>
+            <article>
+              <h3>15:30 AM</h3>
+              <p>Environmental Awareness Campaigns – Tree plantation and sustainability workshops.</p>
+            </article>
+            <article>
+              <h3>16:30 AM</h3>
+              <p>Academic Conferences & Symposiums – Intellectual discussions and research presentations. </p>
+            </article>
+            <article>
+              <h3>17:30 AM</h3>
+              <p>Student Awards & Recognition Ceremonies – Honoring academic and extracurricular achievements. </p>
+              <img src="https://images.fineartamerica.com/images-medium-large-5/maroon-bells-aspen-colorado-black-and-white-photography-by-sai.jpg" alt="Black and white Mountian view">
+            </article>
+          </div>
+        </section>          
+ -->
+
+      <button class="change-bgcolor">More Events</button>
+      </main>
+
+</section>
+
+
+
+<div class="blog-container scroll-reveal" style="z-index: 0;margin: auto;">
+    <div class="head ">
+        <h2>Latest News</h2>
+    </div>
+
+
+    <section>
+        <div class="container" style="margin: auto;">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1041/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1043/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Christian Joudrey</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1044/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Steve Carter</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1045/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1049/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Rosan Harmens</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1052/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Annie Spratt</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+</div>
+
+
+
+<!--
+<div class="head scroll-reveal">
+    <h2>Discover Excellence – Take the Next Step!</h2>
+</div>
+<div class="parallax-content">
+
+
+    <div class="counter-row scroll-reveal">
+        <div class="col-md-3 col-sm-6">
+            <div class="counter">
+                <div class="counter-icon">
+                    <span><i class="fa-solid fa-circle-info"></i></span>
+                </div>
+                <h3>FIND YOUR MAJOR</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="counter blue">
+                <div class="counter-icon">
+                    <span><i class="fa-solid fa-calendar-days"></i></span>
+                </div>
+                <h3>SCHEDULE A VISIT</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="counter orange">
+                <div class="counter-icon">
+                    <span><i class="fa fa-user"></i></span>
+                </div>
+                <h3>APPLY TODAY</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="counter yellow">
+                <div class="counter-icon">
+                    <span><i class="fa fa-location-dot"></i></span>
+                </div>
+                <h3>FIND US</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+-->
+
+
+
+
+
+
+
+<div class="settings-box" id="settingsBox">
+    <div class="settings-icon" onclick="toggleColorBox()">
+        <i class="fas fa-palette"></i>
+    </div>
+    <div class="color-options">
+        <p>Choose Your Style:</p>
+        <div class="color-palette">
+            <div style="background:  rgb(214, 108, 2);" onclick="applyColor(' rgb(214, 108, 2)')"></div>
+            <div style="background: rgb(114, 31, 0);" onclick="applyColor('rgb(114, 31, 0)')"></div>
+            <div style="background: rgb(1, 118, 168);" onclick="applyColor('rgb(1, 118, 168)')"></div>
+            <div style="background: rgb(60, 0, 97);" onclick="applyColor('rgb(60, 0, 97)')"></div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+</section>
+
+<section id="aboutbody">
+
+    
+
+
+</section>
+
+
+
+
+
+	<!-- footer section start -->
+    <footer>
+        
+        <div class="log-container change-bgcolor " >
+            <b class="b1">subscribe<i class="fa-solid fa-bell"></i></b>
+            <img src="LIFEGATE.png" alt="Company Logo">
+        </div>
+
+
+        <div id="footer">
+
+                <div class="useful-link">
+                    <h2>Quick Links</h2>
+                <div class="use-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angles-right"></i>Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angles-right"></i>About Us</a></li>
+                        <li><a href="Blog.html"><i class="fa-solid fa-angles-right"></i>Blog</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-angles-right"></i>Course</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angles-right"></i>Events</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angles-right"></i>Contact</a></li>
+                        
+
+                        <div class="log-container b2" >
+                            <b>subscribe<i class="fa-solid fa-bell"></i></b>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="social-links">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
+                    </div><br>
+
+                <h2>Get In Touch</h2>
+                <div class="social-icons">
+                    <li><a href=""><i class="fa-solid fa-phone"></i> +91 90904500112</a></li>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i> mail@1234567.com</a></li>
+                </div>
+                </div>
+            
+                <div class="address">
+                    <h2>Find Us</h2>
+                    <div class="address-links">
+                        <li class="address1"><i class="fa-solid fa-location-dot"></i> 
+                       <a href="https://maps.app.goo.gl/hn7gZGxLLoL73TPV7"> 
+                        Av. Edmundo Lima Basto Carnaxide, Lisboa
+                    </a>
+                        </li>
+
+                <!-- Google Map -->
+
+                           <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.4160776719687!2d-9.232518624785737!3d38.720068657149135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc893de04a73%3A0x82bb67d881d1b0c4!2sAv.%20Edmundo%20Lima%20Basto%2C%20Carnaxide!5e1!3m2!1sen!2spt!4v1742418022366!5m2!1sen!2spt" 
+                                allowfullscreen 
+                                loading="lazy" 
+                                frameborder="0">
+                            </iframe>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+    </footer>
+    <!-- footer section end -->
+    <!-- footer copy right section start -->
+    <section id="copy-right" class="change-bgcolor">
+        <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>  
+            2025 Lifegate Christian Academy | All Rights Reserve - By: <a href="#">Wills-Visual</a> 
+
+
+        </div>
+
+    </section>
+    <!-- footer copy right section end -->
+<script>
+        
+        
+        function toggleLife() {
+            let content1 = document.getElementById("lifecontent1");
+            let content2 = document.getElementById("lifecontent2");
+            
+            if (content1.classList.contains("lifevisible")) {
+                content1.classList.remove("lifevisible");
+                content1.classList.add("lifehidden");
+                
+                setTimeout(() => {
+                    content2.classList.remove("lifehidden");
+                    content2.classList.add("lifevisible");
+                }, 50);
+            } else {
+                content2.classList.remove("lifevisible");
+                content2.classList.add("lifehidden");
+                
+                setTimeout(() => {
+                    content1.classList.remove("lifehidden");
+                    content1.classList.add("lifevisible");
+                }, 50);
+            }
+        }
+        
+
+           function openDetail(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+        function closeDetail(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+/*
+        let blogIndex = 0;
+        const blogSlider = document.querySelector('.blog-slider');
+        const blogSlides = document.querySelectorAll('.blog-slide');
+        const blogSlideWidth = blogSlides[0].offsetWidth + -150;
+        
+        function blogUpdateSlidePosition() {
+            blogSlider.style.transform = `translateX(-${blogIndex * blogSlideWidth}px)`;
+        }
+
+        function blogNextSlide() {
+            if (blogIndex < blogSlides.length - 1) {
+                blogIndex++;
+            } else {
+                blogIndex = 0;
+            }
+            blogUpdateSlidePosition();
+        }
+
+        function blogPrevSlide() {
+            if (blogIndex > 0) {
+                blogIndex--;
+            } else {
+                blogIndex = blogSlides.length - 1;
+            }
+            blogUpdateSlidePosition();
+        }
+
+        */
+
+
+/*
+const whereSlider = document.querySelector('.where-slider');
+        let whereSlides = document.querySelectorAll('.where-slide');
+        
+        // Clone first 3 slides and append them for infinite effect
+        whereSlides.forEach(whereSlide => {
+            let clone = whereSlide.cloneNode(true);
+            whereSlider.appendChild(clone);
+        });
+
+        let whereIndex = 0;
+        const whereSlideWidth = whereSlides[0].offsetWidth + 20; // Slide width + margin
+
+        function whereUpdateSlidePosition() {
+            whereSlider.style.transition = "transform 0.5s ease-in-out";
+            whereSlider.style.transform = `translateX(-${whereIndex * whereSlideWidth}px)`;
+        }
+
+        function whereNextSlide() {
+            whereIndex++;
+            whereUpdateSlidePosition();
+            
+            setTimeout(() => {
+                if (whereIndex >= whereSlides.length) {
+                    whereSlider.style.transition = "none"; // Remove animation
+                    whereIndex = 0;
+                    whereUpdateSlidePosition();
+                }
+            }, 500);
+        }
+
+        function wherePrevSlide() {
+            if (whereIndex === 0) {
+                whereSlider.style.transition = "none";
+                whereIndex = whereSlides.length / 2; // Jump to cloned slides
+                whereUpdateSlidePosition();
+            }
+            setTimeout(() => {
+                whereIndex--;
+                whereSlider.style.transition = "transform 0.5s ease-in-out";
+                whereUpdateSlidePosition();
+            }, 10);
+        }
+
+        // Auto-slide every 5 seconds
+        setInterval(whereNextSlide, 5000);
+
+*/
+
+
+window.onload = function() {
+    $('.counter-value').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 3500,
+            easing: 'swing',
+            step: function (now){
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+}
+
+/* CAROUSEL FOR DID YOU KNOW */
+const carousel = document.querySelector(".carousel");
+const leftArrow = document.querySelector(".fa-angle-left");
+const rightArrow = document.querySelector(".fa-angle-right");
+const cards = document.querySelectorAll(".card");
+
+let isDragging = false, startX, scrollLeft;
+const cardWidth = cards[0].offsetWidth + 20; // Adjust based on gap/margin
+const totalCards = cards.length;
+
+// Clone first and last few cards for infinite effect
+carousel.innerHTML += carousel.innerHTML; // Duplicate cards
+carousel.style.scrollBehavior = "auto"; // Prevent smooth scroll jump
+carousel.scrollLeft = totalCards * cardWidth; // Start in the middle
+
+// Function to handle infinite scroll reset
+const checkScroll = () => {
+    if (carousel.scrollLeft <= 0) {
+        carousel.scrollLeft = totalCards * cardWidth; // Jump to the end
+    } else if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+        carousel.scrollLeft = totalCards * cardWidth - cardWidth; // Jump to start
+    }
+};
+
+// Slide right when clicking the right arrow
+rightArrow.addEventListener("click", () => {
+    carousel.scrollBy({ left: cardWidth, behavior: "smooth" });
+    setTimeout(checkScroll, 500);
+});
+
+// Slide left when clicking the left arrow
+leftArrow.addEventListener("click", () => {
+    carousel.scrollBy({ left: -cardWidth, behavior: "smooth" });
+    setTimeout(checkScroll, 500);
+});
+
+// Drag functionality
+carousel.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+});
+
+carousel.addEventListener("mouseleave", () => isDragging = false);
+carousel.addEventListener("mouseup", () => {
+    isDragging = false;
+    setTimeout(checkScroll, 500);
+});
+
+carousel.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scrolling speed
+    carousel.scrollLeft = scrollLeft - walk;
+});
+
+// Swipe functionality for touchscreens
+carousel.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    scrollLeft = carousel.scrollLeft;
+}, { passive: true });
+
+carousel.addEventListener("touchmove", (e) => {
+    const x = e.touches[0].clientX;
+    const walk = (x - startX) * 2;
+    carousel.scrollLeft = scrollLeft - walk;
+}, { passive: true });
+
+carousel.addEventListener("touchend", () => {
+    setTimeout(checkScroll, 500);
+});
+
+
+
+/* READMORE OVERLAY*/
+function openOverlay(overlayId) {
+            document.getElementById(overlayId).style.display = "flex";
+        }
+        function closeOverlay(overlayId) {
+            document.getElementById(overlayId).style.display = "none";
+        }
+
+/* HEADER ON SCROLL*/
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-100px";
+    document.getElementById("header").style.padding = "0px 0px 10px 0px;"
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+/* FOR SCROLL REVEAL*/
+document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".scroll-reveal");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transitionDelay = `${index * 0.3}s`; // Staggered delay
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active"); // Re-hide when out of view
+                }
+            });
+        }, { threshold: 0.2 });
+
+        elements.forEach(element => observer.observe(element));
+    });
+
+
+/* COLOR PALLET*/
+document.addEventListener("DOMContentLoaded", function () {
+    const settingsIcon = document.querySelector(".settings-icon");
+    const settingsBox = document.getElementById("settingsBox");
+    let selectedColor = null; // No color is selected initially
+
+    // Toggle settings box on click
+    settingsIcon.addEventListener("click", function () {
+        settingsBox.classList.toggle("active");
+    });
+
+    // Close settings box when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!settingsBox.contains(event.target) && !settingsIcon.contains(event.target)) {
+            settingsBox.classList.remove("active");
+        }
+    });
+
+    // Function to change colors
+    function applyColor(color) {
+        selectedColor = color; // Store selected color
+        document.querySelectorAll(".change-bgcolor").forEach(el => el.style.backgroundColor = color);
+        document.querySelectorAll(".change-color").forEach(el => el.style.color = color);
+        document.querySelectorAll(".change-border").forEach(el => el.style.borderColor = color);
+    }
+
+    // Add event listeners to color palette options
+    document.querySelectorAll(".color-palette div").forEach(colorDiv => {
+        colorDiv.addEventListener("click", function () {
+            const chosenColor = this.style.backgroundColor;
+            applyColor(chosenColor);
+        });
+    });
+
+    // Add hover effect to .mainhead-nav a
+    document.querySelectorAll(".mainhead-nav a").forEach(link => {
+        link.addEventListener("mouseenter", function () {
+            if (selectedColor) {
+                this.style.color = selectedColor; // Apply selected color on hover
+            }
+        });
+        link.addEventListener("mouseleave", function () {
+            this.style.color = ""; // Reset to original color on mouse leave
+        });
+    });
+});
+
+
+const headings = [
+    { text: "Who We Are", id: "whoweare" },
+    { text: "Insight", id: "ins" },
+    { text: "Latest News", id: "News" },
+    { text: "Contact", id: "contact" }
+];
+
+const searchInput = document.getElementById("search");
+const suggestionsBox = document.getElementById("suggestions");
+
+searchInput.addEventListener("input", function() {
+    const query = this.value.toLowerCase();
+    suggestionsBox.innerHTML = "";
+    if (query) {
+        const filtered = headings.filter(h => h.text.toLowerCase().includes(query));
+        if (filtered.length) {
+            suggestionsBox.style.display = "block";
+            filtered.forEach(h => {
+                const div = document.createElement("div");
+                div.textContent = h.text;
+                div.onclick = () => {
+                    const targetElement = document.getElementById(h.id);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        suggestionsBox.style.display = "none";
+                        searchInput.value = "";
+                    }
+                };
+                suggestionsBox.appendChild(div);
+            });
+        } else {
+            suggestionsBox.style.display = "none";
+        }
+    } else {
+        suggestionsBox.style.display = "none";
+    }
+});
+
+document.addEventListener("click", function(event) {
+    if (!searchInput.contains(event.target) && !suggestionsBox.contains(event.target)) {
+        suggestionsBox.style.display = "none";
+    }
+});
+
+
+
+/*
+HERO SLIDER
+*/
+
+
+/*
+let slides = document.querySelectorAll('.slide');
+        let index = 0;
+        let interval;
+
+        function showSlide() {
+            slides.forEach((slide, i) => {
+                slide.style.transform = i === index ? 'translateX(0)' : 'translateX(100%)';
+            });
+            index = (index + 1) % slides.length;
+        }
+
+        function startSlideShow() {
+            interval = setInterval(showSlide, 3000);
+        }
+
+        function stopSlideShow() {
+            clearInterval(interval);
+        }
+
+        document.querySelector('.slider').addEventListener('mouseenter', stopSlideShow);
+        document.querySelector('.slider').addEventListener('mouseleave', startSlideShow);
+
+        startSlideShow();
+        showSlide();
+*/
+
+
+
+function lerp({ x, y }, { x: targetX, y: targetY }) {
+  const fraction = 0.1;
+  
+  x += (targetX - x) * fraction;
+  y += (targetY - y) * fraction;
+  
+  return { x, y };
+}
+
+class Slider {
+  constructor (el) {
+    const imgClass = this.IMG_CLASS = 'slider__images-item';
+    const textClass = this.TEXT_CLASS = 'slider__text-item';
+    const activeImgClass = this.ACTIVE_IMG_CLASS = `${imgClass}--active`;
+    const activeTextClass = this.ACTIVE_TEXT_CLASS =  `${textClass}--active`;
+    
+    this.el = el;
+    this.contentEl = document.getElementById('slider-content');
+    this.onMouseMove = this.onMouseMove.bind(this);
+    
+    // taking advantage of the live nature of 'getElement...' methods
+    this.activeImg = el.getElementsByClassName(activeImgClass);
+    this.activeText = el.getElementsByClassName(activeTextClass);
+    this.images = el.getElementsByTagName('img');
+    
+    document.getElementById('slider-dots')
+      .addEventListener('click', this.onDotClick.bind(this));
+    
+    document.getElementById('left')
+      .addEventListener('click', this.prev.bind(this));
+    
+    document.getElementById('right')
+      .addEventListener('click', this.next.bind(this));
+    
+    window.addEventListener('resize', this.onResize.bind(this));
+    
+    this.onResize();
+    
+    this.length = this.images.length;
+    this.lastX = this.lastY = this.targetX = this.targetY = 0;
+  }
+  onResize () {
+    const htmlStyles = getComputedStyle(document.documentElement);
+    const mobileBreakpoint =  htmlStyles.getPropertyValue('--mobile-bkp');
+    
+    const isMobile = this.isMobile = matchMedia(
+      `only screen and (max-width: ${mobileBreakpoint})`
+    ).matches;
+    
+    this.halfWidth = innerWidth / 2;
+    this.halfHeight = innerHeight / 2;
+    this.zDistance = htmlStyles.getPropertyValue('--z-distance');
+    
+    if (!isMobile && !this.mouseWatched) {
+      this.mouseWatched = true;
+      this.el.addEventListener('mousemove', this.onMouseMove);
+      this.el.style.setProperty(
+        '--img-prev', 
+        `url(${this.images[+this.activeImg[0].dataset.id - 1].src})`
+      );
+      this.contentEl.style.setProperty('transform', `translateZ(${this.zDistance})`);
+    } else if (isMobile && this.mouseWatched) {
+      this.mouseWatched = false;
+      this.el.removeEventListener('mousemove', this.onMouseMove);
+      this.contentEl.style.setProperty('transform', 'none');
+    }
+  }
+  getMouseCoefficients ({ pageX, pageY } = {}) {
+    const halfWidth = this.halfWidth;
+    const halfHeight = this.halfHeight;
+    const xCoeff = ((pageX || this.targetX) - halfWidth) / halfWidth;
+    const yCoeff = (halfHeight - (pageY || this.targetY)) / halfHeight;
+    
+    return { xCoeff,  yCoeff }
+  }
+  onMouseMove ({ pageX, pageY }) {   
+    this.targetX = pageX;
+    this.targetY = pageY;
+    
+    if (!this.animationRunning) {
+      this.animationRunning = true;
+      this.runAnimation();
+    }
+  }
+  runAnimation () {
+    if (this.animationStopped) {
+      this.animationRunning = false;
+      return;
+    }
+    
+    const maxX = 10;
+    const maxY = 10;
+    
+    const newPos = lerp({
+      x: this.lastX,
+      y: this.lastY
+    }, {
+      x: this.targetX,
+      y: this.targetY
+    });
+    
+    const { xCoeff, yCoeff } = this.getMouseCoefficients({
+      pageX: newPos.x, 
+      pageY: newPos.y
+    });
+      
+    this.lastX = newPos.x;
+    this.lastY = newPos.y;
+
+    this.positionImage({ xCoeff, yCoeff });
+    
+    this.contentEl.style.setProperty('transform', `
+      translateZ(${this.zDistance})
+      rotateX(${maxY * yCoeff}deg)
+      rotateY(${maxX * xCoeff}deg)
+    `);
+    
+    if (this.reachedFinalPoint) {
+      this.animationRunning = false;
+    } else {
+      requestAnimationFrame(this.runAnimation.bind(this)); 
+    }
+  }
+  get reachedFinalPoint () {
+    const lastX = ~~this.lastX;
+    const lastY = ~~this.lastY;
+    const targetX = this.targetX;
+    const targetY = this.targetY;
+    
+    return (lastX == targetX || lastX - 1 == targetX || lastX + 1 == targetX) 
+        && (lastY == targetY || lastY - 1 == targetY || lastY + 1 == targetY);
+  }
+  positionImage ({ xCoeff, yCoeff }) {
+    const maxImgOffset = 1;
+    const currentImage = this.activeImg[0].children[0];
+    
+    currentImage.style.setProperty('transform', `
+      translateX(${maxImgOffset * -xCoeff}em)
+      translateY(${maxImgOffset * yCoeff}em)
+    `);  
+  }
+  onDotClick ({ target }) {
+    if (this.inTransit) return;
+    
+    const dot = target.closest('.slider__nav-dot');
+    
+    if (!dot) return;
+    
+    const nextId = dot.dataset.id;
+    const currentId = this.activeImg[0].dataset.id;
+    
+    if (currentId == nextId) return;
+    
+    this.startTransition(nextId);
+  }
+  transitionItem (nextId) {
+    function onImageTransitionEnd (e) {
+      e.stopPropagation();
+      
+      nextImg.classList.remove(transitClass);
+      
+      self.inTransit = false;
+      
+      this.className = imgClass;
+      this.removeEventListener('transitionend', onImageTransitionEnd);
+    }
+    
+    const self = this;
+    const el = this.el;
+    const currentImg = this.activeImg[0];
+    const currentId = currentImg.dataset.id;
+    const imgClass = this.IMG_CLASS;
+    const textClass = this.TEXT_CLASS;
+    const activeImgClass = this.ACTIVE_IMG_CLASS;
+    const activeTextClass = this.ACTIVE_TEXT_CLASS;
+    const subActiveClass = `${imgClass}--subactive`;
+    const transitClass = `${imgClass}--transit`;
+    const nextImg = el.querySelector(`.${imgClass}[data-id='${nextId}']`);
+    const nextText = el.querySelector(`.${textClass}[data-id='${nextId}']`);
+    
+    let outClass = '';
+    let inClass = '';
+
+    this.animationStopped = true;
+    
+    nextText.classList.add(activeTextClass);
+    
+    el.style.setProperty('--from-left', nextId);
+    
+    currentImg.classList.remove(activeImgClass);
+    currentImg.classList.add(subActiveClass);
+    
+    if (currentId < nextId) {
+      outClass = `${imgClass}--next`;
+      inClass = `${imgClass}--prev`;
+    } else {
+      outClass = `${imgClass}--prev`;
+      inClass = `${imgClass}--next`;
+    }
+    
+    nextImg.classList.add(outClass);
+    
+    requestAnimationFrame(() => {
+      nextImg.classList.add(transitClass, activeImgClass);
+      nextImg.classList.remove(outClass);
+      
+      this.animationStopped = false;
+      this.positionImage(this.getMouseCoefficients());
+      
+      currentImg.classList.add(transitClass, inClass);
+      currentImg.addEventListener('transitionend', onImageTransitionEnd);
+    });
+
+    if (!this.isMobile)
+      this.switchBackgroundImage(nextId);
+  }
+  startTransition (nextId) {
+    function onTextTransitionEnd(e) {
+      if (!e.pseudoElement) {
+        e.stopPropagation();
+
+        requestAnimationFrame(() => {
+          self.transitionItem(nextId);
+        });
+
+        this.removeEventListener('transitionend', onTextTransitionEnd);
+      }
+    }
+    
+    if (this.inTransit) return;
+
+    const activeText = this.activeText[0];
+    const backwardsClass = `${this.TEXT_CLASS}--backwards`;
+    const self = this;
+    
+    this.inTransit = true;
+    
+    activeText.classList.add(backwardsClass);
+    activeText.classList.remove(this.ACTIVE_TEXT_CLASS);
+    activeText.addEventListener('transitionend', onTextTransitionEnd);
+    
+    requestAnimationFrame(() => {
+      activeText.classList.remove(backwardsClass);
+    });
+  }
+  next () {
+    if (this.inTransit) return;
+    
+    let nextId = +this.activeImg[0].dataset.id + 1;
+    
+    if (nextId > this.length)
+        nextId = 1;
+    
+    this.startTransition(nextId);
+  }
+  prev () {
+    if (this.inTransit) return;
+    
+    let nextId = +this.activeImg[0].dataset.id - 1;
+    
+    if (nextId < 1)
+        nextId = this.length;
+    
+    this.startTransition(nextId);
+  }
+  switchBackgroundImage (nextId) {
+    function onBackgroundTransitionEnd (e) {
+      if (e.target === this) {
+        this.style.setProperty('--img-prev', imageUrl);
+        this.classList.remove(bgClass);
+        this.removeEventListener('transitionend', onBackgroundTransitionEnd);
+      }
+    }
+
+    const bgClass = 'slider--bg-next';
+    const el = this.el;
+    const imageUrl = `url(${this.images[+nextId - 1].src})`;
+    
+    el.style.setProperty('--img-next', imageUrl);
+    el.addEventListener('transitionend', onBackgroundTransitionEnd);
+    el.classList.add(bgClass);
+  }
+}
+
+const sliderEl = document.getElementById('slider');
+const slider = new Slider(sliderEl);
+
+// ------------------ Demo stuff ------------------------ //
+
+let timer = 0;
+
+function autoSlide () {
+  requestAnimationFrame(() => {
+    slider.next();
+  });
+  
+  timer = setTimeout(autoSlide, 5000);
+}
+
+function stopAutoSlide () {
+  clearTimeout(timer);
+  
+  this.removeEventListener('touchstart', stopAutoSlide);
+  this.removeEventListener('mousemove', stopAutoSlide);  
+}
+
+sliderEl.addEventListener('mousemove', stopAutoSlide);
+sliderEl.addEventListener('touchstart', stopAutoSlide);
+
+timer = setTimeout(autoSlide, 2000);
+
+
+
+function toggleMenu() {
+            const nav = document.querySelector(".mainhead-nav");
+            nav.classList.toggle("active");
+        }
+
+
+        const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+</script>
+</body>
+</html>
