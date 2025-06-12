@@ -209,13 +209,20 @@ body {
 
 .mainhead-phone-number { 
     padding: 33px 40px;
-    color: white; 
     font-weight: bold; 
     clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);;
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: white; 
+
     
+    }
+
+    .mainhead-phone-number a{
+      text-decoration: none;
+     color: white; 
+
     }
     .mainhead-phone-number b{
         letter-spacing: 2px;
@@ -2500,7 +2507,7 @@ footer .log-container img {
 
 #eventbody {
       background: #2b2a2b;
-  color: white;
+     color: white;
 }
 
 #eventbody main img {

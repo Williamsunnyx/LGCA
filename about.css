@@ -156,7 +156,7 @@ a.current_dot {
     
 }
 .mainbody{
-  margin-left: 65px;
+  margin-left: 60px;
   background-color: #f4f4f4;
   min-height: 100vh;
   transition: margin-left .5s;
@@ -169,6 +169,8 @@ a.current_dot {
   font-family: "Boldonse", system-ui;
   font-style: normal;
 }
+
+
 
 
 .card-body {
@@ -1202,7 +1204,7 @@ ul li .title {
   :root {
     --background: #9c88ff;
     --navbar-width: 200px;
-    --navbar-width-min: 70px;
+    --navbar-width-min: 60px;
     --navbar-dark-primary: #0f1a28;
     --navbar-dark-secondary: #3b4e61;
     --navbar-light-primary: #f5f6fa;
@@ -1234,7 +1236,7 @@ ul li .title {
     background: var(--navbar-light-primary);
   }
   #nav-toggle:checked ~ #nav-header #nav-toggle-burger:before, #nav-toggle:checked ~ #nav-header #nav-toggle-burger::after {
-    width: 16px;
+    width: 20px;
     background: var(--navbar-light-secondary);
     transform: translate(0, 0) rotate(0deg);
   }

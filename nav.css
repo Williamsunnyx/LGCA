@@ -69,7 +69,7 @@ a {
     background: var(--navbar-light-primary);
   }
   #nav-toggle:checked ~ #nav-header #nav-toggle-burger:before, #nav-toggle:checked ~ #nav-header #nav-toggle-burger::after {
-    width: 16px;
+    width: 20px;
     background: var(--navbar-light-secondary);
     transform: translate(0, 0) rotate(0deg);
   }
