@@ -3231,6 +3231,7 @@ footer .log-container img {
   gap: 2rem;
   font-family: "Jura", sans-serif;
   width: 100%;
+  zoom: 55%;
 }
 
 @media screen and (max-width: 760px) {
