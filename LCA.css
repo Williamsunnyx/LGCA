@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
     color: #595959;
     font-size: 16px;
+    zoom: 80%;
      
     }
 
@@ -115,10 +116,11 @@ body {
     }
 
 .change-bgcolor{
-    background-color: rgb(214, 108, 2);
+    background-color: rgb(106, 4, 11);
+    color: white;
 }
 .change-color{
-    color:   rgb(214, 108, 2);
+    color:    rgb(106, 4, 11);
 }
 .change-border{
     border: 1.4px solid  rgb(214, 108, 2);
@@ -3055,12 +3057,11 @@ footer .log-container img {
 .prof-hero {
   position: relative;
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background: linear-gradient(to right, white 20%, rgba(255, 192, 203, 0.824) 50%, white 80%);
-
+  
 }
 
 .prof-hero-title {
@@ -3068,7 +3069,7 @@ footer .log-container img {
   top: 0px;
   width: 100%;
   text-align: center;
-  font-size: 5.5vw;
+  font-size: 5vw;
   font-weight: bold;
   color: #202121c5;
   z-index: 0;
@@ -3084,6 +3085,7 @@ footer .log-container img {
   width: 100%;
   max-width: 1200px;
   z-index: 2;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -3153,7 +3155,7 @@ footer .log-container img {
 }
 
 .prof-middle-image img {
-  width: 100%;
+  width: 80%;
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
@@ -3170,10 +3172,11 @@ footer .log-container img {
   font-size: 14px;
   margin-bottom: 16px;
   font-weight: 600;
+  text-align: start;
 }
 
 .prof-right-box button {
-  background-color: #2563eb;
+  background-color: #7c031d;
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -3184,7 +3187,7 @@ footer .log-container img {
 }
 
 .prof-right-box button:hover {
-  background-color: #1d4ed8;
+  background-color: #c9071b;
 }
 
 .prof-avatar-group {
@@ -3225,7 +3228,6 @@ footer .log-container img {
 .why-body {
   --color: rgba(30, 30, 30);
   display: grid;
-  margin: auto;
   align-content: center;
   justify-content: center;
   gap: 2rem;
@@ -3469,3 +3471,555 @@ max-width: 1200px;
 @media screen and (max-width:990px){
     .counter{ margin-bottom: 40px; }
 }
+
+:root {
+    --red: #9c1f34;
+    --red-gradient-start: #5e0411;
+    --red-gradient-end: #6b151f;
+    --text-white: #fff;
+    --text-gray-dark: #333;
+    --text-gray-light: #777;
+    --transition-time: 0.6s;
+  }
+
+  * {
+    box-sizing: border-box;
+    
+  }
+
+
+
+
+
+  .what-we-are {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    animation: fadeInSection var(--transition-time) ease forwards;
+    
+
+  }
+
+  /* LEFT container - text */
+  .text-container {
+    flex: 1;
+    background: #111;
+    position: relative;
+    padding: 5rem 4rem 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  /* Text styling */
+  .text-container h1 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    color: var(--text-white);
+  }
+
+  .text-container h1 span {
+    font-weight: 700;
+    color: var(--text-gray-light);
+    user-select: none;
+  }
+
+  .text-container .highlight {
+    font-weight: 700;
+    color: var(--text-white);
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 0.1em;
+  }
+
+  .btn-prospectus {
+    background-color: var(--red);
+    border: none;
+    color: white;
+    padding: 0.7em 1.6em;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: max-content;
+    margin-top: 2rem;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 10px rgb(156 31 52 / 0.6);
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-prospectus:hover,
+  .btn-prospectus:focus {
+    background-color: #b6303f;
+    outline: none;
+  }
+
+  /* Slanted bottom on text container */
+  .text-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, black, var(--red-gradient-start), var(--red-gradient-end));
+    clip-path: polygon(0 70%, 100% 100%, 100% 100%, 0% 100%);
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    z-index: 0;
+  }
+
+  /* RIGHT container - image */
+  .image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, black, var(--red-gradient-start), var(--red-gradient-end));
+clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+    transform-origin: bottom left;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 95%);
+
+  }
+
+  /* Slanted bottom on image container using ::before */
+  /*.image-container::before {
+    content: "";
+    position: absolute;
+    bottom: 20;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(135deg, var(--red-gradient-start), var(--red-gradient-end));
+    clip-path: polygon(0 100%, 100% 70%, 100% 100%, 0% 100%);
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    z-index: 2;
+    pointer-events: none;
+  }*/
+
+  /* Responsive and mobile tweaks */
+  @media (max-width: 700px) {
+    .what-we-are {
+      flex-wrap: wrap;
+      min-height: auto;
+      animation: none;
+      position: relative;
+    }
+
+    /* Image container goes on top, no slant */
+    .image-container {
+      flex: none;
+      width: 100%;
+      height: 250px;
+      position: relative;
+    }
+
+    .image-container::before {
+      clip-path: none;
+      height: 0;
+      background: none;
+      transform: none;
+      z-index: 0;
+    }
+
+    .image-container img {
+      transform: none;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Text container below with slant but adjusted angle */
+    .text-container {
+      flex: none;
+      width: 100%;
+      padding: 3rem 2rem 5rem 2rem;
+      position: relative;
+    }
+
+    .text-container::after {
+      clip-path: polygon(0 60%, 100% 100%, 100% 100%, 0 100%);
+      height: 100px;
+      transform: skewY(-4deg);
+      z-index: 0;
+    }
+
+    .text-container h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .btn-prospectus {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* Fade in animation */
+  @keyframes fadeInSection {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+   .orbit-container {
+      position: absolute;
+      top: 2%;
+      width: 300px;
+      height: 300px;
+      animation: rotate 10s linear infinite;
+      zoom: 50%;
+    }
+
+    .orbit-image {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .orbit-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .orbit-text span {
+      position: absolute;
+      transform-origin: center;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      color: rgb(209, 211, 213);
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .orbit-text .star {
+      color: gold;
+    }
+
+
+
+
+    .audit{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(to bottom, rgb(255, 192, 203) 50%, white 30%, rgba(255, 192, 203, 0.824) 50%);
+      font-size: 13px;
+      position: relative;
+      bottom: 60px;
+      z-index: 10;
+    }
+
+    @media (max-width: 768px) {
+      .audit {
+        position: static;
+        bottom: 0px;
+      }
+    }
+
+    .audit-text{
+      text-align: start;
+
+    }
+    .audit-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      max-width: 300px;
+      margin: auto;
+    }
+
+    .audit img {
+      margin: 10px;
+      width: 60px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      
+    }
+
+    .audit p {
+      color: rgba(63, 62, 62, 0.668);
+      
+    }
+
+        .audit h2 {
+      color: rgba(7, 7, 7, 0.836);
+      
+    }
+
+
+
+    
+    .whot-body {
+      padding: 20px 0px;
+      width: 100%;
+      height: auto;
+      background: #111;
+      margin: 0;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .whot-body  h1{
+        text-align: center;
+        font-size: 30px;
+      }
+
+    .whot-container {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .whot-slide {
+      position: relative;
+      width: 20%;
+      height: 400px;
+      perspective: 1000px;
+      flex-shrink: 0;
+      overflow: visible; /* allow cards to peek out */
+      margin: 10px;
+    }
+
+    .whot-card {
+      position: absolute;
+      width: 280px;
+      height: 400px;
+      border-radius: 12px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transform: translateX(-60px) scale(0.9);
+      transition: transform 1.2s ease, opacity 1s ease, left 1.2s ease;
+      z-index: 1;
+    }
+
+    /* The card currently sliding out behind */
+    .whot-card.whot-slide-out {
+      opacity: 0.7;
+      transform: translateX(20px) scale(0.9);
+      left: -20px;
+      top: 40px;
+      z-index: 1;
+    }
+
+    /* The card currently in front (active) */
+    .whot-card.whot-slide-in {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      left: 0;
+      z-index: 3;
+    }
+
+    .text-block{
+      width: 50%;
+    }
+
+    .text-on-flex{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px auto;
+      color: #adadad;
+      line-height: 1.5;
+
+    }
+    .text-on-flex p{
+      width: 50%;
+      margin: 0px 10px 0px 0px;
+      font-weight: 500;
+      font-size: 14px;
+
+
+    }
+
+    .showsmall{
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .showsmall {
+        display: b;
+        margin: 20px;
+      }
+
+      .text-on-flex p {
+        width: 90%;
+      } 
+
+          
+     .text-on-flex img{
+      width: 90%;
+     }
+
+
+     .showbig{
+      display: none;
+     }
+     
+    }
+
+     .text-on-flex img{
+      width: 50%;
+     }
+
+     .text-on-flex button{
+      cursor: pointer;
+      background-color: rgb(79, 1, 1);
+      color: rgb(199, 198, 198);
+      padding: 10px 20px;
+      font-size: 13px;
+      outline: none;
+      border: none;
+      text-transform: uppercase;
+      word-spacing: 3px;
+      font-weight: 600;
+      border-radius: 10px;
+     }
+
+    .whot-text-group {
+      position: relative;
+      width: 400px;
+      height: 100px;
+      flex-shrink: 3;
+    }
+
+    .whot-text {
+      position: absolute;
+      max-width: 400px;
+      opacity: 0;
+      transform: translateX(60px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .whot-text.whot-show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .whot-text h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .whot-text p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    @media (max-width: 700px) {
+      .whot-slide, .whot-text-group {
+        width: 200px;
+      }
+
+      .whot-card {
+        width: 180px;
+        height: 280px;
+      }
+
+      .whot-text h2 {
+        font-size: 1.2rem;
+      }
+
+      .whot-text p {
+        font-size: 0.9rem;
+      }
+    }
+
+
+    .whot-body .orbit-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      animation: rotate 10s linear infinite;
+      zoom: 30%;
+    }
+
+    .whot-body .orbit-image {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .whot-body .orbit-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .whot-body .orbit-text span {
+      position: absolute;
+      transform-origin: center;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: rgb(209, 211, 213);
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .whot-body .orbit-text .star {
+      color: gold;
+    }
+
+    .campus-container{
+      width: 100%;
+      display: flex;
+      width: 500px;
+      height: 400px;
+    }
+
+    .campus-container img{
+      width: 50%;
+      height: 300px;
+    }
