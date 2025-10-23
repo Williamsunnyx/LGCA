@@ -13,585 +13,565 @@
   </head>
 <body>
 
+    <header id="header">
+        <!--SUB HEADER-->
 
-  <div class="settings-box" id="settingsBox">
-		<div class="settings-icon" onclick="toggleColorBox()">
-			<i class="fas fa-palette"></i>
-		</div>
-		<div class="color-options">
-			<p>Choose Your Style:</p>
-			<div class="color-palette">
-				<div style="background:  rgb(214, 108, 2);" onclick="applyColor(' rgb(214, 108, 2)')"></div>
-				<div style="background: rgb(114, 31, 0);" onclick="applyColor('rgb(114, 31, 0)')"></div>
-				<div style="background: rgb(1, 118, 168);" onclick="applyColor('rgb(1, 118, 168)')"></div>
-				<div style="background: rgb(60, 0, 97);" onclick="applyColor('rgb(60, 0, 97)')"></div>
-	
-			</div>
-		</div>
-	</div>
-
-  <!--
-  
-    <div class="sidebar-navigation">
-    <ul>
-      <li class="change-bgcolor">
-       <a href="LCA.html"><i class="fa fa-home"></i></a>
-        <span class="tooltip">Home</span>
-      </li>
-      <li>
-       <a href="about.html"><i class="fa fa-address-card"></i></a>
-        <span class="tooltip">About Us</span>
-      </li>
-
-      <li>
-        <i class="fa fa-newspaper"></i>
-        <span class="tooltip">Blog</span>
-      </li>
-      <li>
-        <a href="courses.html"><i class="fa fa-chalkboard"></i></a>
-        <span class="tooltip">Courses</span>
-      </li>
-      <li>
-        <i class="fa fa-calendar-check"></i>
-        <span class="tooltip">Events</span>
-      </li>
-      <li>
-        <i class="fa fa-address-book"></i>
-        <span class="tooltip">Contact</span>
-      </li>
-      <li>
-        <i class="fa fa-user-plus"></i>
-        <span class="tooltip">Apply</span>
-      </li>
-    </ul>
-
-
-
-    
-  </div>
-  
-  -->
-
-
-
-
-  
-<div id="nav-bar">
-  <input id="nav-toggle" type="checkbox"/>
-  <div id="nav-header"><a id="nav-title" href="https://codepen.io" target="_blank">LGC-Academy<i class="fas fa-graduation-cap"></i></a>
-    <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
-    <hr/>
-  </div>
-  <div id="nav-content">
-    <div class="nav-button" ><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></div>
-    <div class="nav-button  change-bgcolor" style=" border-radius: 16px 0 0 16px;"><i class="fas fa-address-card"></i><span>About Us</span></div>
-    <div class="nav-button"><a href="courses.html"><i class="fas fa-chalkboard"></i><span>Courses</span></a></div>
-    <hr/>
-    <div class="nav-button"><a href="blog.html"><i class="fas fa-newspaper"></i><span>Blog</span></a></div>
-    <div class="nav-button"><i class="fas fa-calendar-check"></i><span>Events</span></div>
-    <div class="nav-button"><i class="fas fa-address-book"></i><span>Contact</span></div>
-    <div class="nav-button"><a href="Gallery.html"><i class="fas fa-images"></i><span>Gallery</span></a></div>
-
-    <hr/>
-    <div class="nav-button"><i class="fas fa-user-plus"></i><span>Apply</span></div>
-
-    <div id="nav-content-highlight"></div>
-  </div>
-  <input id="nav-footer-toggle" type="checkbox"/>
-  <div id="nav-footer">
-    <div id="nav-footer-heading">
-      <div id="nav-footer-avatar"><img src="LIFEGATE.png"/></div>
-      <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
-    </div>
-    <div id="nav-footer-content">
-      <div class="introduction">
-        <p>Dedicated to nurturing young minds and shaping future leaders, We 
-          stands as a beacon of excellence, providing a holistic education 
-          that combines academic rigor, innovative teaching methods, 
-          and a supportive environment. With a focus on quality learning, 
-          LGCA empower students to excel in their studies, discover their passions, 
-          and develop the skills needed to thrive in a dynamic world.</p>
-      </div>
-    </div>
-  </div>
-</div>
-  
-  <div class="mainbody" id="mainbody">
-
-    <section class="intro">
-        <div class="left">
-          <div>
-            <span class="change-color">Explore</span>
-            <h1>The Place Where Discipline Meets Excellence</h1>
-            <p>Welcome to the best Standard Oriented School, where learning thrives, creativity blossoms, and every student is empowered to achieve their fullest potential in a nurturing environment. 
-                We pride ourselves on excellent teaching skills, professional teachers, a serene environment, and the provision of modern learning exposure to foster deep learning abilities.</p>
-          </div>
-        </div>
-  
-        <div class="slider">
-          <ul>
-            <li style="background-image:url(kindergatenchild2.webp)">
-              <div class="center-y">
-                <h3>Discover the Joy of Learning</h3>
-              </div>
-            </li>
-            <li style="background-image:url(5gradchild.jpg)">
-              <div class="center-y">
-                <h3>Discover the Young and Standard</h3>
-              </div>
-            </li>
-            <li style="background-image:url(classroomstud3.avif)">
-              <div class="center-y">
-                <h3>Discover What Works</h3>
-              </div>
-            </li>
-
-            <li style="background-image:url(view-school-building.jpg)">
-                <div class="center-y">
-                  <h3>Discover the Best Environment</h3>
+        <div class="sub-header">
+            <div class="logo">
+                <img src="LIFEGATE.png" alt="Logo">
+            </div>
+            <div class="nav">
+                <a href="#" id="login"><i class="fas fa-sign-in-alt change-color"></i> Login</a>
+                <a href="#" id="register"><i class="fas fa-phone change-color"></i> Get in Touch</a>
+                <div class="search-container">
+                    <input type="text" id="search" class="search-input" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                    <div class="suggestions" id="suggestions"></div>
                 </div>
+            </div>
+        </div>
+       
+
+        <!--MAIN HEADER-->
+        <div class="mainhead-header" >
+
+            <div class="mainhead-menu-icon change-color" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="mainhead-nav">
+                <li><a href="index.html">Home</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#whoweare">Who We Are</a>
+                        <a href="#ins">Insights</a>
+                        <a href="#News">Latest News</a>
+
+                    </div>
+                </li>
+
+                <li><a href="about.html" class="change-bgcolor" style="color: white;">About Us</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#">Mision</a>
+                        <a href="#">The Team</a>
+                        <a href="#">Archievements</a>
+                        <a href="#">Why Choose Us</a>
+                        <a href="#">What They Say</a>
+
+
+
+                    </div>
+                </li>
+                <li><a href="courses.html">Courses</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#">Basic</a>
+                        <a href="#">High School</a>
+                        <a href="#">online Courses</a>
+
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#">Sports</a>
+                        <a href="#">News</a>
+                    </div>
+                </li>
+                <li><a href="#mainhead-events">Events</a>
+                    <div class="mainhead-dropdown change-bgcolor" >
+                        <a href="#">Upcoming</a>
+                        <a href="#">Past Events</a>
+                    </div>
+                </li>
+
+                <li><a href="#mainhead-contact">Contact</a>
+                    <div class="mainhead-dropdown change-bgcolor">
+                        <a href="#">Apply</a>
+                        <a href="#">Email Us</a>
+                        <a href="#">Support</a>
+                        <a href="#">Enquiry</a>
+
+                    </div>
+                </li>
+
+                <li><a href="Gallery.html">Gallery</a>
+                  <div class="mainhead-dropdown change-bgcolor">
+                      <a href="#">Campus</a>
+                      <a href="#">Students</a>
+                      <a href="#">Events</a>
+                      <a href="#">Memories</a>
+
+                  </div>
               </li>
-
-              <li style="background-image:url(young-kids-performing-play-theatre-stage-celebrate-world-theatre-day.jpg)">
-                <div class="center-y">
-                  <h3>Unleash Talents</h3>
-                </div>
-              </li>
-          </ul>
-  
-          <ul>
-            <nav>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-
-            </nav>
-          </ul>
+            </ul>
+            <div class="mainhead-phone-number change-bgcolor">
+                <i class="fa-solid fa-user-plus"></i>
+                <b><a href="apply.html">ADMISSION</a></b>
+            </div>
         </div>
-      </section>
+
+</header>
 
 
+<div class="homebody">
 
-  <div class="card-body">
-    <div class="head" style="color: white;">
-    <h1>MISSIONS AND VISIONS</h1>
-    </div>
+   <!-- Hero with image on top. Put any image inside .hero img and the missions will sit below it. -->
+  <div class="missionbody">
+  <article class="hero" aria-label="School mission showcase">
+    <img src="multiethnic-group-young-concentrated-students.jpg" alt="Students on campus"/>
 
-    <div class="card-flex">
-      
-      <div class="cards">
-        <div class="card content">
-          <div class="card-content">
-            <div class="card-img">
-              <img src="close-up-students-classroom.jpg" alt="Gamer">
-            </div>
-            <div class="card-label">Standard Learning</div>
-            <div class="card-title">
-              LGCA will raise over 20 Billion Top Scholars, shaping up leadership Quality.
-            </div>
-          </div>
+    <section class="missions-wrap">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding: 0px 22px;width: 100%;">
+        <div>
+          <h3 style="margin:0;font-size:30px;">Who We Are</h3>
+          <p style="margin:6px 0 0;color:var(--muted);font-size:13px">Key commitments that guide our school every day.</p>
         </div>
-        <div class="card content">
-          <div class="card-content">
-            <div class="card-img">
-              <img src="close-up-kid-while-having-technology-education-class.jpg" alt="keyboard">
-            </div>
-            <div class="card-label">
-              Technology
-            </div>
-            <div class="card-title">
-              The Future of Technology begins in an LGCA Classroom. Building Technological Smart Scholars.
-            </div>
-          </div>
-        </div>
-        <div class="card content">
-          <div class="card-content">
-            <div class="card-img">
-              <img src="young-basketball-player-shoot.jpg" alt="Controller">
-            </div>
-            <div class="card-label">
-              Sports
-            </div>
-            <div class="card-title">
-                LGCA; Rooted in  creating world champions through sports excellence.
-            </div>
-          </div>
-        </div>
-        <div class="card form">
-          <div class="form-title">Apply Now</div>
-        </div>
+        <div style="color:var(--muted);font-size:13px">7 items</div>
       </div>
 
-    </div>
-
-  </div>    
-
-
-    <div class="center-body">
-      <div class="head">
-        <h1>THE TEAM</h1>
-       </div>
-      <div class="center">
-        <div class="wrapper">
-          <div class="inner">
-
-            <div class="card">
-              <h1>Prof. Miriam Alham</h1>
-              <img src="teacher7.jpg">
-              <div class="content">
-                <h1>Academic Coordinator</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
-            <div class="card">
-              <h1>Prof. Oluwa Johnson</h1>
-              <img src="teacher5.jpg">
-              <div class="content">
-                <h1>Subject Head</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
-            <div class="card">
-              <h1>Prof. Williams Axe</h1>
-              <img src="teacher6.jpg">
-              <div class="content">
-                <h1>Discipline Coordinator</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
-            <div class="card">
-              <h1>Prof. Emmy Chibueze</h1>
-              <img src="teacher4.jpg">
-              <div class="content">
-                <h1>Examination Officer</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
-            <div class="card">
-              <h1>Prof. Woods Wild</h1>
-              <img src="teacher2.jpg">
-              <div class="content">
-                <h1>Student Welfare Officer</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
-            <div class="card">
-              <h1>Prof. Caroline Teteh</h1>
-              <img src="teacher8.jpg">
-              <div class="content">
-                <h1>Digital Learning Lead</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
-              <div class="card">
-                <h1>Prof. Maria Mackwood</h1>
-              <img src="teacher1.jpg">
-              <div class="content">
-                <h1>Extracurricular Activities Coordinator</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
-            <div class="card">
-                <h1>Prof. Miks holand</h1>
-              <img src="teacher3.jpg">
-              <div class="content">
-                <h1>Digital Learning Lead</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
-            <div class="card">
-              <h1>Prof. Emly Sush</h1>
-              <img src="teacher9.webp">
-              <div class="content">
-                <h1>Professional Development Coordinator</h1>
-                <h3>UI/UX, Design</h3>
-              </div>
-            </div>
+      <div class="missions-grid" style="margin-top:6px;">
+        <!-- Mission item: Standard Education -->
+        <div class="mission">
+          <div class="icon" aria-hidden>
+            <!-- graduation cap -->
+            <img src="icons8-graduation-80.png" style="width: 35px;height: 35px;"  fill="none" alt="">
+          </div>
+          <div class="content">
+            <h4>Standard Education</h4>
+            <p>High-quality curriculum and classroom learning for academic growth.</p>
           </div>
         </div>
-        
-        <div class="map">
-          <button class="active first"></button>
-          <button class="second"></button>
-          <button class="third"></button>
-        </div>
-      </div>
-    </div>
 
-    <!-- Main Section -->
-<main class="main">
-  <div class="head">
-    <h1>Why Choose Us</h1>
+        <!-- Inclusive Learning -->
+        <div class="mission">
+          <div class="icon" aria-hidden>
+            <!-- users -->
+            <img src="icons8-learning-50 (2).png" style="width: 35px;height: 35px;" fill="none" alt="">
+
+          </div>
+          <div class="content">
+            <h4>Inclusive Learning</h4>
+            <p>Accessible instruction that celebrates diversity and supports every learner.</p>
+          </div>
+        </div>
+
+        <!-- Wellbeing -->
+        <div class="mission">
+          <div class="icon" aria-hidden>
+            <!-- heart -->
+            <img src="icons8-trust-64.png" style="width: 35px;height: 35px;" fill="none" alt="">
+
+          </div>
+          <div class="content">
+            <h4>Student Well-being</h4>
+            <p>Support physical and mental health so students can thrive.</p>
+          </div>
+        </div>
+
+        <!-- Community Engagement -->
+        <div class="mission">
+          <div class="icon" aria-hidden>
+            <!-- handshake -->
+            <img src="icons8-engagement-50.png" style="width: 35px;height: 35px;" fill="none" alt="">
+
+          </div>
+          <div class="content">
+            <h4>Community Engagement</h4>
+            <p>Build partnerships with families and local organisations.</p>
+          </div>
+        </div>
+
+        <!-- Innovation & Tech -->
+        <div class="mission">
+          <div class="icon" aria-hidden>
+            <!-- atom / innovation -->
+            <img src="icons8-innovation-100.png" style="width: 35px;height: 35px;"  fill="none" alt="">
+
+          </div>
+          <div class="content">
+            <h4>Innovation & Technology</h4>
+            <p>Prepare students with tech skills and creative problem solving.</p>
+          </div>
+        </div>
+
+        <!-- Environmental Stewardship -->
+        <div class="mission">
+          <div class="icon" aria-hidden>
+            <!-- leaf -->
+            <img src="icons8-environment-50.png" style="width: 32px; height: 32px;"  fill="none" alt="">
+
+          </div>
+          <div class="content">
+            <h4>Environmental Stewardship</h4>
+            <p>Teach sustainability and care for our planet.</p>
+          </div>
+        </div>
+
+        <!-- Lifelong Learning -->
+        <div class="mission">
+          <div class="icon" aria-hidden>
+            <!-- book -->
+            <img src="icons8-learning-50 (2).png" style="width: 35px;height: 35px;" fill="none" alt="">
+
+          </div>
+          <div class="content">
+            <h4>Lifelong Learning</h4>
+            <p>Inspire curiosity, critical thinking, and learning beyond school.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </article>
   </div>
-  
-  <section class="section banner banner-section">
-     <div class="container banner-column">
-        <img class="banner-image" src="HIGHSCHOOL.png" alt="banner" style="mask-image: linear-gradient(to bottom, black 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);">
-        <div class="banner-inner">
-           <h1 class="heading-xl">Quality Education Like Never Before</h1>
-           <p class="paragraph">
-                Experience a nurturing environment where students excel 
-                academically, develop creativity, and grow into future 
-                leaders, equipped with the skills to succeed in a dynamic world.
-           </p>
-  
-<div class="why-body">
-<ul>
-    <li style="--accent-color:#0B374D">
-        <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
-        <div class="title">Quality</div>
-        
-    </li>
-    <li style="--accent-color:#1286A8">
-        <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="title">Innovation</div>
-        
-    </li>
-    <li style="--accent-color:#D2B53B">
-        <div class="icon"><i class="fa-solid fa-hand-fist"></i></div>
-        <div class="title">Commitment</div>
-        
-    </li>
-    <li style="--accent-color:#DA611E">
-        <div class="icon"><i class="fa-solid fa-microchip"></i></div>
-        <div class="title">Digital</div>
-     
-    </li>
-    <li style="--accent-color:#AC2A1A">
-        <div class="icon"><i class="fa-solid fa-trophy"></i></div>
-        <div class="title">Excellence</div> 
-    </li>
-</ul>
-</div>
-           <button class="btn btn-darken btn-inline">
-              Our Courses<i class="bx bx-right-arrow-alt"></i>
-           </button>
-        </div>
-   <!--
-          <div class="banner-links">
-           <a href="#" title=""><i class="bx bxl-facebook"></i></a>
-           <a href="#" title=""><i class="bx bxl-instagram"></i></a>
-           <a href="#" title=""><i class="bx bxl-twitter"></i></a>
-           <a href="#" title=""><i class="bx bxl-youtube"></i></a>
-         </div>
-   -->     
+  <!-- End Hero -->
 
-     </div>
+    <section id="story">
+    <div class="container">
+      <div class="text">
+        <h2>Our Mission</h2>
+        <p>founded on the belief that Education should be more than memorizing 
+          facts and passing exams. Our journey began with a vision to create a community where learning goes 
+          beyond classrooms, where creativity and innovation are at the heart of everything we do. Over the years, 
+          we have grown into a vibrant institution that welcomes students from diverse 
+          cultures and backgrounds. Our story is one of persistence, passion, and progress..</p>
+      </div>
+      <div class="image">
+        <img src="https://picsum.photos/600/400?random=2" alt="Our Mission">
+      </div>
+    </div>
   </section>
-</main>
 
-    <div class="testimony-body">
-
-      <div class="head" style="color: white;">
-        <h1>What They Say</h1>
+  <section id="mission">
+    <div class="container">
+      <div class="image ripple-img">
+        <img src="https://picsum.photos/500/500?random=1" alt=" Our Story">
       </div>
-
-      <div class="card-flex">
-      
-    <figure class="snip1157">
-      <blockquote>
-        <b>The teachers are not only knowledgeable but also
-           genuinely care about the students' well-being and growth. 
-           My child has become more confident, disciplined, and eager 
-           to learn. We couldn’t have chosen a better school!"</b>
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="teacher8.jpg" alt="sq-sample3" />
-      <div class="author">
-        <h5>Emilian Thomson <span> - Parent</span></h5>
+      <div class="text">
+       <h2>Our Story</h2> 
+        <p>At LGCA International School, our mission is to nurture the leaders of 
+          tomorrow through a holistic, inclusive, and innovative learning environment. We are committed 
+          to instilling academic excellence, cultural awareness, and a spirit of global citizenship. 
+          Every student is encouraged to discover their unique talents and strengths, and we empower 
+          them to think critically, act responsibly, and contribute positively to the world. </p>
       </div>
-    </figure>
-    <figure class="snip1157 hover">
-      <blockquote><b>my biggest concern is my child’s safety and education. 
-                LGCA School provides a secure, supportive, and engaging learning 
-                environment. The teachers are patient and understanding.</b>
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="teacher9.webp" alt="sq-sample27" />
-      <div class="author">
-        <h5>Therisa Makyon<span> - Parent</span></h5>
-      </div>
-    </figure>
-    <figure class="snip1157">
-      <blockquote><b>LGCA School is more than just a school—it’s a family. 
-                The nurturing atmosphere, dedicated teachers, and excellent 
-                curriculum have given my children a strong foundation for 
-                the future. </b>
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="teacher2.jpg" alt="sq-sample17" />
-      <div class="author">
-        <h5>Mark Worten<span> - Uncle</span></h5>
-      </div>
-    </figure>
-
-  </div>
-
-</div>
-
-<div class="cta-body">
-
-    <div class="cta-container">
-        <div class="cta-content">
-            <h2>Join the Future of Learning</h2>
-            <p>Get access to high-quality education with interactive courses and expert teachers.</p>
-        </div>
-        <div class="cta-signin" style="position: relative;">
-            <img src="bookicon.png" alt="Watermark" style="position: absolute; top: 65%; right: 0%; transform: translate(-0%, -50%); opacity: 0.2; z-index: -1; width: 40%; height: auto;">
-            <h1>Register Now</h1>
-            <a href="#">Get Started</a>
-        </div>
     </div>
+  </section>
+
+
+
+<div class="team-section" id="team">
+  
+  <h2>OUR TEAM</h2>
+  <p>Meet our team members</p>
+
+  <div class="team-container">
+    <button class="arrow left">&#10094;</button>
+    <div class="team-slider" id="teamSlider">
+      <!-- 7 Team Members -->
+      <div class="team-member">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team">
+          <h3>Lynda Edward</h3>
+          <h4>Principal</h4>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Team">
+          <h3>Eva Clevis</h3>
+          <h4>Secretary</h4>
+          <div class="socials">
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Team">
+          <h3>Charlie Smith</h3>
+          <h4>Professor</h4>
+          <div class="socials">
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Team">
+          <h3>David Brown</h3>
+          <h4>Teacher</h4>
+          <div class="socials">
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/77.jpg" alt="Team">
+          <h3>Sarah White</h3>
+          <h4>Teacher</h4>
+          <div class="socials">
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Team">
+          <h3>James Lee</h3>
+          <h4>Coordinator</h4>
+          <div class="socials">
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="Team">
+          <h3>Alice Green</h3>
+          <h4>Teacher</h4>
+          <div class="socials">
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="arrow right">&#10095;</button>
+  </div>
+</div>
+
+  <section id="future">
+    <div class="container">
+      <div class="text">
+        <h2>Our Future</h2>
+        <p>The future of LGCA International School is one filled with promise and opportunity. 
+          We envision a school that continues to expand its global reach, embracing new technologies and 
+          teaching methodologies to keep pace with an ever-changing world. Sustainability, innovation, 
+          and inclusivity remain at the heart of our plans. We are committed to building stronger 
+          partnerships with communities, creating pathways for international exchange, and preparing our 
+          students to thrive in a rapidly evolving global society.</p>
+      </div>
+      <div class="image">
+        <img src="https://picsum.photos/600/400?random=4" alt="Our Future">
+      </div>
+    </div>
+  </section>
+
+
 
 </div>
 
 
-  </div>    
+
+	<!-- footer section start -->
+    <footer>
+        
+        <div class="log-container change-bgcolor " >
+            <b class="b1">subscribe<i class="fa-solid fa-bell"></i></b>
+            <img src="LIFEGATE.png" alt="Company Logo">
+        </div>
+
+
+        <div id="footer">
+
+                <div class="useful-link">
+                    <h2>Quick Links</h2>
+                <div class="use-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angles-right"></i>Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angles-right"></i>About Us</a></li>
+                        <li><a href="Blog.html"><i class="fa-solid fa-angles-right"></i>Blog</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-angles-right"></i>Course</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angles-right"></i>Events</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angles-right"></i>Contact</a></li>
+                        
+
+                        <div class="log-container b2" >
+                            <b>subscribe<i class="fa-solid fa-bell"></i></b>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="social-links">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
+                    </div><br>
+
+                <h2>Get In Touch</h2>
+                <div class="social-icons">
+                    <li><a href=""><i class="fa-solid fa-phone"></i> +91 90904500112</a></li>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i> mail@1234567.com</a></li>
+                </div>
+                </div>
+            
+                <div class="address">
+                    <h2>Find Us</h2>
+                    <div class="address-links">
+                        <li class="address1"><i class="fa-solid fa-location-dot"></i> 
+                       <a href="https://maps.app.goo.gl/hn7gZGxLLoL73TPV7"> 
+                        Av. Edmundo Lima Basto Carnaxide, Lisboa
+                    </a>
+                        </li>
+
+                <!-- Google Map -->
+
+                           <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.4160776719687!2d-9.232518624785737!3d38.720068657149135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc893de04a73%3A0x82bb67d881d1b0c4!2sAv.%20Edmundo%20Lima%20Basto%2C%20Carnaxide!5e1!3m2!1sen!2spt!4v1742418022366!5m2!1sen!2spt" 
+                                allowfullscreen 
+                                loading="lazy" 
+                                frameborder="0">
+                            </iframe>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+    </footer>
+    <!-- footer section end -->
+    <!-- footer copy right section start -->
+    <section id="copy-right" class="change-bgcolor">
+        <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>  
+            2025 Lifegate Christian Academy | All Rights Reserve - Design made By: <a href="#">Williams</a> 
+
+
+        </div>
+
+    </section>
+    <!-- footer copy right section end -->
 
 
 <script>
+  
+/* HEADER ON SCROLL*/
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+    document.getElementById("header").style.borderBottom = "0px";
 
-  {
-  class SliderClip {
-    constructor(el) {
-      this.el = el;
-      this.Slides = Array.from(this.el.querySelectorAll('li'));
-      this.Nav = Array.from(this.el.querySelectorAll('nav a'));
-      this.totalSlides = this.Slides.length;
-      this.current = 0;
-      this.autoPlay = true; //true or false
-      this.timeTrans = 4000; //transition time in milliseconds
-      this.IndexElements = [];
+  } else {
+    document.getElementById("header").style.top = "-300px";
+    document.getElementById("header").style.padding = "0px 0px 10px 0px;"
+    document.getElementById("header").style.boxShadow = "0px 0px 5px gray";
 
-      for (let i = 0; i < this.totalSlides; i++) {
-        this.IndexElements.push(i);
-      }
-
-      this.setCurret();
-      this.initEvents();
-    }
-    setCurret() {
-      this.Slides[this.current].classList.add('current');
-      this.Nav[this.current].classList.add('current_dot');
-    }
-    initEvents() {
-      const self = this;
-
-      this.Nav.forEach(dot => {
-        dot.addEventListener('click', ele => {
-          ele.preventDefault();
-          this.changeSlide(this.Nav.indexOf(dot));
-        });
-      });
-
-      this.el.addEventListener('mouseenter', () => self.autoPlay = false);
-      this.el.addEventListener('mouseleave', () => self.autoPlay = true);
-
-      setInterval(function () {
-        if (self.autoPlay) {
-          self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
-          self.changeSlide(self.current);
-        }
-      }, this.timeTrans);
-
-    }
-    changeSlide(index) {
-
-      this.Nav.forEach(allDot => allDot.classList.remove('current_dot'));
-
-      this.Slides.forEach(allSlides => allSlides.classList.remove('prev', 'current'));
-
-      const getAllPrev = value => value < index;
-
-      const prevElements = this.IndexElements.filter(getAllPrev);
-
-      prevElements.forEach(indexPrevEle => this.Slides[indexPrevEle].classList.add('prev'));
-
-      this.Slides[index].classList.add('current');
-      this.Nav[index].classList.add('current_dot');
-    }}
-
-
-  const slider = new SliderClip(document.querySelector('.slider'));
+  }
+  prevScrollpos = currentScrollPos;
 }
 
 
 
-	/* COLOR PALLET*/
-  document.addEventListener("DOMContentLoaded", function () {
-    const settingsIcon = document.querySelector(".settings-icon");
-    const settingsBox = document.getElementById("settingsBox");
-    let selectedColor = null; // No color is selected initially
 
-    // Toggle settings box on click
-    settingsIcon.addEventListener("click", function () {
-        settingsBox.classList.toggle("active");
-    });
+/* TOGGLE ALL SECTION*/
 
-    // Close settings box when clicking outside
-    document.addEventListener("click", function (event) {
-        if (!settingsBox.contains(event.target) && !settingsIcon.contains(event.target)) {
-            settingsBox.classList.remove("active");
+ const sections = document.querySelectorAll("section");
+    let lastScrollY = window.scrollY;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (window.scrollY > lastScrollY) {
+            entry.target.classList.add("visible", "down");
+            entry.target.classList.remove("hidden-up", "up");
+          } else {
+            entry.target.classList.add("visible", "up");
+            entry.target.classList.remove("hidden-down", "down");
+          }
+        } else {
+          if (window.scrollY > lastScrollY) {
+            entry.target.classList.remove("visible");
+            entry.target.classList.add("hidden-up");
+          } else {
+            entry.target.classList.remove("visible");
+            entry.target.classList.add("hidden-down");
+          }
         }
-    });
+      });
+      lastScrollY = window.scrollY;
+    }, { threshold: 0.5 });
 
-    // Function to change colors
-    function applyColor(color) {
-        selectedColor = color; // Store selected color
-        document.querySelectorAll(".change-bgcolor").forEach(el => el.style.backgroundColor = color);
-        document.querySelectorAll(".change-color").forEach(el => el.style.color = color);
-        document.querySelectorAll(".change-border").forEach(el => el.style.borderColor = color);
-    }
-
-    // Add event listeners to color palette options
-    document.querySelectorAll(".color-palette div").forEach(colorDiv => {
-        colorDiv.addEventListener("click", function () {
-            const chosenColor = this.style.backgroundColor;
-            applyColor(chosenColor);
-        });
+    sections.forEach(section => {
+      observer.observe(section);
     });
 
 
-});
+ const slider = document.getElementById("teamSlider");
+  const leftBtn = document.querySelector(".arrow.left");
+  const rightBtn = document.querySelector(".arrow.right");
 
+  let slideIndex = 0;
+  const totalMembers = slider.children.length;
 
-// https://colorlib.com/preview/theme/seogo/
+  // Clone first and last few members for infinite effect
+  const cloneFirst = slider.children[0].cloneNode(true);
+  const cloneLast = slider.children[totalMembers-1].cloneNode(true);
+  slider.appendChild(cloneFirst);
+  slider.insertBefore(cloneLast, slider.children[0]);
 
-const buttonsWrapper = document.querySelector(".map");
-const slides = document.querySelector(".inner");
+  let visibleCount = window.innerWidth <= 768 ? 2 : 4;
+  let slideWidth = slider.children[0].offsetWidth;
 
-buttonsWrapper.addEventListener("click", e => {
-  if (e.target.nodeName === "BUTTON") {
-    Array.from(buttonsWrapper.children).forEach(item =>
-      item.classList.remove("active")
-    );
-    if (e.target.classList.contains("first")) {
-      slides.style.transform = "translateX(-0%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("second")) {
-      slides.style.transform = "translateX(-33.33333333333333%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains('third')){
-      slides.style.transform = 'translatex(-66.6666666667%)';
-      e.target.classList.add('active');
-    }
+  function updateSlider() {
+    slider.style.transform = `translateX(-${(slideIndex + 1) * slideWidth}px)`;
   }
-});
 
+  rightBtn.addEventListener("click", () => {
+    if (slideIndex >= totalMembers - visibleCount) {
+      slideIndex++;
+      updateSlider();
+      setTimeout(() => {
+        slider.style.transition = "none";
+        slideIndex = 0;
+        updateSlider();
+        setTimeout(() => slider.style.transition = "transform 0.5s ease-in-out");
+      }, 500);
+    } else {
+      slideIndex++;
+      updateSlider();
+    }
+  });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const body = document.querySelector(".mainbody");
-  const navToggle = document.getElementById("nav-toggle");
+  leftBtn.addEventListener("click", () => {
+    if (slideIndex <= 0) {
+      slideIndex--;
+      updateSlider();
+      setTimeout(() => {
+        slider.style.transition = "none";
+        slideIndex = totalMembers - visibleCount;
+        updateSlider();
+        setTimeout(() => slider.style.transition = "transform 0.5s ease-in-out");
+      }, 500);
+    } else {
+      slideIndex--;
+      updateSlider();
+    }
+  });
 
-  if (body && navToggle) {
-    body.addEventListener("click", function () {
-      navToggle.checked = true; // Only close if it's already open
-    });
-  }
-});
-
-      </script>
+  // Initialize
+  updateSlider();
+</script>
 </body>
 </html>
